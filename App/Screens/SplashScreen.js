@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View, Dimensions, Animated, Text } from 'react-native'
-import styles from '../styles/SplashScreenStyles'
+import {styles} from '../styles/SplashScreenStyles'
 
 
 const screenWidth = Math.round(Dimensions.get('window').width);
@@ -12,7 +12,6 @@ class Loader extends Component {
     onLoad = () => {
         Animated.timing(this.state.opacity, { toValue: 1, duration: 1000, }).start()
     }
-
     render() {
         return (
             <Animated.Image
@@ -37,7 +36,6 @@ class Loader extends Component {
         )
     }
 }
-
 export default class SplashScreen extends Component {
     render() {
         return (
