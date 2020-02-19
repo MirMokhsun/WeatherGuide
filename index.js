@@ -1,26 +1,33 @@
-import React, { Component } from 'react'
-import {AppRegistry} from 'react-native';
-import {name as appName} from './app.json';
+//simple imports of index
+import { AppRegistry } from 'react-native';
+import { name as appName } from './app.json';
 import App from './App'
-import SplashScreen from './App/Screens/SplashScreen'
-
-class Splash extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-            currentScreen: 'Splash' };
-        setTimeout(()=>{
-            this.setState({
-                currentScreen: 'App'})
-        }, 2000)
-    }
-
-    render() {
-        const {currentScreen} = this.state
-        let mainScreen = currentScreen === 'Splash' ? <SplashScreen /> : <App />
-        return mainScreen
-    }
+//imports for redux
+/*import reducer from ''
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux'
+//imports for persist
+import { persistStore, persistReducer } from 'redux-persist'
+import AsyncStorage from '@react-native-community/async-storage'
+*/
+//imports for SplashScreen
+import Splash from './App/Components/Splash'
+/*
+const persistConfig = {
+    key: 'root',
+    storage: AsyncStorage,
+    whitelist: ['result', 'back', 'username']
 }
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+const persistedStore = persistStore(store)
 
+const store = createStore(persistedReducer, applyMiddleware(createLogger()));
 
+const PointOfNoReturn = () =>
+    <Provider store={store}>
+        <PersistGate persistor={persistedStore} loading={null}>
+            <App />
+        </PersistGate>
+    </Provider>
+*/
 AppRegistry.registerComponent(appName, () => Splash);
