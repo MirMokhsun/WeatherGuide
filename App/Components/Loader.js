@@ -6,7 +6,6 @@ export default class Loader extends Component {
     state = {
         opacity: new Animated.Value(0),
     }
-
     onLoad = () => {
         Animated.timing(this.state.opacity, { toValue: 1, duration: 1000, }).start()
     }

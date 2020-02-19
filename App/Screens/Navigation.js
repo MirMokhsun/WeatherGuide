@@ -9,24 +9,16 @@ import DrawerContent from './DrawerContent'
 
 const screenWidth = Math.round(Dimensions.get('window').width);
 
-const BurgerMenu = createDrawerNavigator({
-    Main: {
-        screen: MainScreen,
-    },
-},
+const BurgerMenu = createDrawerNavigator(
+    { Main: { screen: MainScreen } },
     {
-        contentComponent: DrawerContent,
+        contentComponent: props => <DrawerContent />,
     })
 const SideScreen = createDrawerNavigator(
-    {
-        Main: {
-            screen: BurgerMenu
-        },
-    }, {
+    { Main: { screen: BurgerMenu } }, {
     drawerWidth: screenWidth,
     drawerPosition: 'right',
-    contentComponent: props =>
-        <SecondScreen />
+    contentComponent: props => <SecondScreen />
 })
 
 export default createAppContainer(SideScreen);

@@ -10,8 +10,6 @@ import { createStore, applyMiddleware } from 'redux'
 import { persistStore, persistReducer } from 'redux-persist'
 import AsyncStorage from '@react-native-community/async-storage'
 */
-//imports for SplashScreen
-import Splash from './App/Components/Splash'
 /*
 const persistConfig = {
     key: 'root',
@@ -30,4 +28,4 @@ const PointOfNoReturn = () =>
         </PersistGate>
     </Provider>
 */
-AppRegistry.registerComponent(appName, () => Splash);
+AppRegistry.registerComponent(appName, () => App);

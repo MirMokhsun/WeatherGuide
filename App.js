@@ -1,17 +1,18 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import SideScreen from './App/Screens/Navigation'
+import SplashScreen from './App/Screens/SplashScreen'
 
-class App extends Component {
-  constructor(props) {
-    super(props)
-  }
-  render() {
-    return (
-      <SideScreen />
-    )
-  }
+export default function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2300)
+  }, [])
+
+  if (loading) return <SplashScreen />
+
+  return <SideScreen />
 }
 
-export default App
 
 
