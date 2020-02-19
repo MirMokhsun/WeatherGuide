@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Image, View, StyleSheet, Dimensions, Animated, Text } from 'react-native'
+import { View, Dimensions, Animated, Text } from 'react-native'
+import styles from '../styles/SplashScreenStyles'
 
 
 const screenWidth = Math.round(Dimensions.get('window').width);
@@ -42,22 +43,10 @@ export default class SplashScreen extends Component {
         return (
             <View style={styles.container}>
                 <Loader
-                    source={require('../../src/logos/sun.png')} />
+                    source={require('../assets/logos/sun.png')} />
                 <Text style={styles.txt}>Weather Guide</Text>
             </View>
         )
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#d3f4ff',
-    },
-    txt: {
-        fontSize: 45,
-        fontFamily: 'OdibeeSans-Regular'
-    }
-})

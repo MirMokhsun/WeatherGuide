@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
 import App from './App'
-import SplashScreen from './Components/Screens/SplashScreen'
+import SplashScreen from './App/Screens/SplashScreen'
 
 class Splash extends Component {
     constructor(props) {
