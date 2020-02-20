@@ -1,11 +1,10 @@
 import React from 'react'
 import { Dimensions } from 'react-native'
-import { createAppContainer } from 'react-navigation'
+import { createAppContainer} from 'react-navigation'
 import { createDrawerNavigator } from 'react-navigation-drawer'
-import MainScreen from './MainScreen';
-import SecondScreen from './SecondPage'
-import DrawerContent from './DrawerContent'
-
+import MainScreen from '../screens/mainScreen';
+import SecondScreen from '../screens/secondPage'
+import DrawerContent from '../screens/drawerContent'
 
 const screenWidth = Math.round(Dimensions.get('window').width);
 
@@ -14,11 +13,16 @@ const BurgerMenu = createDrawerNavigator(
     {
         contentComponent: props => <DrawerContent />,
     })
-const SideScreen = createDrawerNavigator(
-    { Main: { screen: BurgerMenu } }, {
+
+const Navigation = createDrawerNavigator(
+    {
+        Main: {
+            screen: BurgerMenu
+        }
+    }, {
     drawerWidth: screenWidth,
     drawerPosition: 'right',
     contentComponent: props => <SecondScreen />
 })
 
-export default createAppContainer(SideScreen);
+export default createAppContainer(Navigation);

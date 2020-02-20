@@ -1,19 +1,29 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native'
 
-
+const screenWidth = Math.round(Dimensions.get('window').width);
 export const styles = StyleSheet.create({
     container: {
-        
         flex: 1,
-        flexDirection: 'row', 
-        justifyContent: 'center',
     },
     txt: {
-        marginTop: 4,
-        color: 'white',
+        marginLeft: 50,
         fontSize: 45,
-        fontFamily: 'OdibeeSans-Regular'
+        fontFamily: 'OdibeeSans-Regular',
+        color: 'white'
     },
     VB: {
+        marginTop: 4,
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+    },
+    Img: { marginLeft: 10, width: 35, height: 50,},
+    WB: {
+        height: 75,
+        width: screenWidth - 10,
+        marginTop: 15,
+        marginLeft: 5,
+        borderRadius: 3,
+        backgroundColor: 'rgba(255,255,255,0.3)'
     },
 })

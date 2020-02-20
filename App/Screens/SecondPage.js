@@ -1,17 +1,24 @@
 import React, { Component } from 'react'
-import { TouchableOpacity, Text, ImageBackground } from 'react-native'
-import { styles } from '../styles/SecondScreenStyle'
-
+import { ImageBackground, View } from 'react-native'
+import { styles } from '../styles/secondScreenStyle'
+import Header from '../components/header'
 const Background = require('../assets/Images/Background.jpg')
+const burger = require('../assets/logos/menu_white.png')
+
 export default class SecondPage extends Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
+        const { navigation } = this.props;
+
         return (
             <ImageBackground style={styles.container}
                 resizeMode='cover'
                 source={Background} >
-                <Text style={styles.txt}>Second Page</Text>
-                    <TouchableOpacity style={styles.VB} onPress={() => { this.props.navigation.navigate('Main') }}>
-                    </TouchableOpacity>
+                < Header {...{ navigation }} />
+                <View style={styles.WB}>
+                </View>
             </ImageBackground>
         )
     }

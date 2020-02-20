@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import SideScreen from './App/Screens/Navigation'
-import SplashScreen from './App/Screens/SplashScreen'
+import Navigation from './App/navigation/navigation'
+import SplashScreen from './App/screens/splashScreen'
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -11,8 +11,5 @@ export default function App() {
 
   if (loading) return <SplashScreen />
 
-  return <SideScreen />
+  return <Navigation />
 }
-
-
-
