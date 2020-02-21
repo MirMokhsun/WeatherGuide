@@ -1,21 +1,28 @@
 import React from 'react'
 import { Dimensions } from 'react-native'
 import { createDrawerNavigator } from 'react-navigation-drawer'
-import DrawerContent from '../screens/drawerContent'
-import AppFlow from '../stack/stack'
+// import DrawerContent from '../screens/drawerContent'
+import AppFlow from './stack'
+import { createAppContainer } from 'react-navigation'
 
 
 const screenWidth = Math.round(Dimensions.get('window').width);
 
 export const BurgerMenu = createDrawerNavigator(
-    { AppFlow: { screen: AppFlow } },
     {
-        contentComponent: props => <DrawerContent />,
+        MainApp:
+        {
+            screen:AppFlow
+        }
+    },
+    {
+        contentComponent: props => null,
+        // contentComponent: props => <DrawerContent />,
     })
 
 export const Swipe = createDrawerNavigator(
     {
-        AppFlow: {
+        AppF: {
             screen: BurgerMenu
         }
     }, {
@@ -24,3 +31,4 @@ export const Swipe = createDrawerNavigator(
     contentComponent: props => <SecondScreen />
 })
 
+export default createAppContainer(Swipe)
