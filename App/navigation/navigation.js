@@ -1,28 +1,19 @@
 import React from 'react'
-import { Dimensions } from 'react-native'
-import { createAppContainer} from 'react-navigation'
-import { createDrawerNavigator } from 'react-navigation-drawer'
-import MainScreen from '../screens/mainScreen';
-import SecondScreen from '../screens/secondPage'
-import DrawerContent from '../screens/drawerContent'
+import { createAppContainer, createSwitchNavigator} from 'react-navigation'
+import AuthPage from './stack/stack'
+import AppFlow from  './stack/stack'
+import SplashScreen from '../screens/splashScreen'
 
-const screenWidth = Math.round(Dimensions.get('window').width);
+const Navigation = createSwitchNavigator({
+    SplashScreen,
+    App: {screen: AppFlow},
+    Auth: {screen: AuthPage}
+},
+{
+    initialRouteName: 'SplashScreen'
+}
+)
 
-const BurgerMenu = createDrawerNavigator(
-    { Main: { screen: MainScreen } },
-    {
-        contentComponent: props => <DrawerContent />,
-    })
 
-const Navigation = createDrawerNavigator(
-    {
-        Main: {
-            screen: BurgerMenu
-        }
-    }, {
-    drawerWidth: screenWidth,
-    drawerPosition: 'right',
-    contentComponent: props => <SecondScreen />
-})
 
 export default createAppContainer(Navigation);

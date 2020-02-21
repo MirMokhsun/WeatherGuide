@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
-import {  ImageBackground, View, ScrollView } from 'react-native'
-import { styles } from '../styles/mainScreenStyles'
-import Header from '../components/header'
+import { ImageBackground, View, ScrollView } from 'react-native'
+import { styles } from './style'
+import Header from '../../components/header'
+import images from '../../services/constans/images';
 
-const Wallpaper = require('../assets/Images/Wallpaper.jpg')
+
 export default class MainScreen extends Component {
     render() {
         return (
             <ImageBackground style={styles.container}
                 resizeMode='cover'
-                source={Wallpaper} >
-                < Header/>
+                source={images.wallpaper} >
+
+                < Header />
                 <ScrollView style={styles.container}>
                     <View style={styles.WB}></View>
                     <View style={styles.WBH}></View>

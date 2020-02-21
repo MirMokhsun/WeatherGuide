@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { ImageBackground, View } from 'react-native'
-import { styles } from '../styles/secondScreenStyle'
-import Header from '../components/header'
-const Background = require('../assets/Images/Background.jpg')
-const burger = require('../assets/logos/menu_white.png')
+import { styles } from './style'
+import Header from '../../components/header'
+import images from '../../services/constans/images'
+
 
 export default class SecondPage extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ export default class SecondPage extends Component {
         return (
             <ImageBackground style={styles.container}
                 resizeMode='cover'
-                source={Background} >
+                source={images.background} >
                 < Header {...{ navigation }} />
                 <View style={styles.WB}>
                 </View>

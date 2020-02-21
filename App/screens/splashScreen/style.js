@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native'
+import colors from '../../services/constans/colors'
 
 
 export const styles = StyleSheet.create({
@@ -6,7 +7,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#d3f4ff',
+        backgroundColor: colors.pBlue,
     },
     txt: {
         fontSize: 45,

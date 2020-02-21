@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Login snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#45d679",
+    }
+  }
+>
+  <Text>
+     loginScreen 
+  </Text>
+</View>
+`;

@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native'
+import colors from '../../services/constans/colors';
 
 const screenWidth = Math.round(Dimensions.get('window').width);
 export const styles = StyleSheet.create({
@@ -9,7 +10,7 @@ export const styles = StyleSheet.create({
         marginLeft: 50,
         fontSize: 45,
         fontFamily: 'OdibeeSans-Regular',
-        color: 'white'
+        color: colors.white
     },
     VB: {
         marginTop: 4,
@@ -24,6 +25,6 @@ export const styles = StyleSheet.create({
         marginTop: 15,
         marginLeft: 5,
         borderRadius: 3,
-        backgroundColor: 'rgba(255,255,255,0.3)'
+        backgroundColor: colors.halfWhite
     },
 })

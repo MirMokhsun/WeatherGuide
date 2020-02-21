@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Dimensions, Animated} from 'react-native'
+import React, { Component } from 'react';
+import { Dimensions, Animated} from 'react-native';
 
 const screenWidth = Math.round(Dimensions.get('window').width);
 export default class Loader extends Component {
@@ -7,7 +7,7 @@ export default class Loader extends Component {
         opacity: new Animated.Value(0),
     }
     onLoad = () => {
-        Animated.timing(this.state.opacity, { toValue: 1, duration: 1000, }).start()
+        Animated.timing(this.state.opacity, { toValue: 1, duration: 1000, }).start();
     }
     render() {
         return (
