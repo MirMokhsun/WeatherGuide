@@ -1,17 +1,17 @@
-import { createTopTabNavigator } from 'react-navigation-tabs';
+import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 import { createAppContainer } from 'react-navigation';
 import MainScreen from '../screens/mainScreen';
 import SecondScreen from '../screens/secondScreen';
 
 
 
-const TabNavigator = createTopTabNavigator(
+const TabNavigator = createMaterialTopTabNavigator(
     {
-        MainScreen,
-        SecondScreen,
+        MainScreen ,
+        SecondScreen ,
     },
     {
-        initialRouteName: 'MainScreen'
+        initialRouteName: 'MainScreen',
     }
 );
 

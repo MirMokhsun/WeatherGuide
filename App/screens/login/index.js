@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import colors from '../../services/constans/colors'
 
 export default class LoginScreen extends Component {
@@ -11,8 +11,9 @@ export default class LoginScreen extends Component {
 
   render() {
     return (
-      <View style={{backgroundColor: colors.emerald}}>
+      <View style={{ backgroundColor: colors.emerald }}>
         <Text> loginScreen </Text>
+        <Button onPress={() => { this.props.navigation.navigate('RegistrScreen')}} />
       </View>
     );
   }
