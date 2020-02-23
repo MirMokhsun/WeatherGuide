@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Main snapshot 1`] = `
+<ImageBackground
+  resizeMode="cover"
+  source={
+    Object {
+      "testUri": "../../../app/assets/images/Wallpaper.jpg",
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ScrollViewMock
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.3)",
+          "borderRadius": 3,
+          "height": 125,
+          "marginLeft": 5,
+          "marginTop": 15,
+          "width": 740,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.3)",
+          "borderRadius": 3,
+          "height": 150,
+          "marginLeft": 5,
+          "marginTop": 25,
+          "width": 740,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.3)",
+          "borderRadius": 3,
+          "height": 150,
+          "marginLeft": 5,
+          "marginTop": 15,
+          "width": 740,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.3)",
+          "borderRadius": 3,
+          "height": 150,
+          "marginLeft": 5,
+          "marginTop": 15,
+          "width": 740,
+        }
+      }
+    />
+  </ScrollViewMock>
+</ImageBackground>
+`;

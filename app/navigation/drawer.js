@@ -1,34 +1,19 @@
 import React from 'react'
-import { Dimensions } from 'react-native'
 import { createDrawerNavigator } from 'react-navigation-drawer'
-// import DrawerContent from '../screens/drawerContent'
-import AppFlow from './stack'
-import { createAppContainer } from 'react-navigation'
+import DrawerContent from '../screens/drawerContent'
+import TabNavigator from './tabnavigation';
+import { createAppContainer } from 'react-navigation';
 
 
-const screenWidth = Math.round(Dimensions.get('window').width);
 
-export const BurgerMenu = createDrawerNavigator(
+const NavRoutes = { TabNavigator }
+
+export const BurgerMenu = createAppContainer(createDrawerNavigator(
+    NavRoutes,
     {
-        MainApp:
-        {
-            screen:AppFlow
-        }
-    },
-    {
-        contentComponent: props => null,
-        // contentComponent: props => <DrawerContent />,
-    })
+        contentComponent: props => <DrawerContent {...props} />,
+        drawerBackgroundColor: '#ffffff',
+    }
+    ))
 
-export const Swipe = createDrawerNavigator(
-    {
-        AppF: {
-            screen: BurgerMenu
-        }
-    }, {
-    drawerWidth: screenWidth,
-    drawerPosition: 'right',
-    contentComponent: props => <SecondScreen />
-})
-
-export default createAppContainer(Swipe)
+export default BurgerMenu;

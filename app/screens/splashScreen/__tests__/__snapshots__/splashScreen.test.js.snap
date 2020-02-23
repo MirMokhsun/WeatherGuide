@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SplashScreen SplashScreen snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#d3f4ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Loader
+    source={
+      Object {
+        "testUri": "../../../app/assets/logos/sun.png",
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "fontFamily": "OdibeeSans-Regular",
+        "fontSize": 45,
+      }
+    }
+  >
+    Weather Guide
+  </Text>
+</View>
+`;

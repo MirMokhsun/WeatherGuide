@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SecondPage SecondPage snapshot 1`] = `
+<ImageBackground
+  resizeMode="cover"
+  source={
+    Object {
+      "testUri": "../../../app/assets/images/Background.jpg",
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(255,255,255,0.3)",
+        "borderRadius": 3,
+        "height": 75,
+        "marginLeft": 5,
+        "marginTop": 15,
+        "width": 740,
+      }
+    }
+  />
+</ImageBackground>
+`;

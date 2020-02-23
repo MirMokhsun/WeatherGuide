@@ -16,7 +16,6 @@ export default class SecondPage extends Component {
             <ImageBackground style={styles.container}
                 resizeMode='cover'
                 source={images.background} >
-                < Header {...{ navigation }} />
                 <View style={styles.WB}>
                 </View>
             </ImageBackground>

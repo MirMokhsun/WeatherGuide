@@ -12,7 +12,6 @@ export default class MainScreen extends Component {
                 resizeMode='cover'
                 source={images.wallpaper} >
 
-                < Header />
                 <ScrollView style={styles.container}>
                     <View style={styles.WB}></View>
                     <View style={styles.WBH}></View>

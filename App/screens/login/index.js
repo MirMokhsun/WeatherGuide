@@ -12,8 +12,8 @@ export default class LoginScreen extends Component {
   render() {
     return (
       <View style={{ backgroundColor: colors.emerald }}>
-        <Text> loginScreen </Text>
-        <Button onPress={() => { this.props.navigation.navigate('RegistrScreen')}} />
+        <Button title="loginScreen" onPress={() => { this.props.navigation.navigate('RegistrScreen')}} />
+        <Button title="Main" onPress={() => { this.props.navigation.navigate('App')}} />
       </View>
     );
   }

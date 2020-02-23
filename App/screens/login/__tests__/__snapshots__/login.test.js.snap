@@ -8,8 +8,13 @@ exports[`Login Login snapshot 1`] = `
     }
   }
 >
-  <Text>
-     loginScreen 
-  </Text>
+  <Button
+    onPress={[Function]}
+    title="loginScreen"
+  />
+  <Button
+    onPress={[Function]}
+    title="Main"
+  />
 </View>
 `;
