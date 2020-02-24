@@ -13,7 +13,7 @@ const tabbarOption = {
         activeTintColor: '#000000',
         inactiveTintColor: '#000000',
         showIcon: true,
-        
+
         labelStyle: {
             marginVertical: 5,
             fontSize: 10,
@@ -31,10 +31,10 @@ const TabNavigator = createMaterialTopTabNavigator(
         MainScreen: {
             screen: MainScreen,
         },
-        SecondScreen : {
+        SecondScreen: {
             screen: SecondScreen,
         },
-        
+
     },
     {
         tabBarOptions: tabbarOption,
@@ -42,7 +42,8 @@ const TabNavigator = createMaterialTopTabNavigator(
         swipeEnabled: true,
         animationEnabled: true,
         backBehavior: 'none',
-        safeAreaInset: { bottom: 'always', top: 'never' }
+        safeAreaInset: { bottom: 'always', top: 'never' },
+
     }
 );
 

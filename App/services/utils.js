@@ -1,8 +1,12 @@
-const { width, height } = Dimensions.get('window');
+import { Dimensions } from 'react-native';
 
-const checkIsIOs = () => {
-    return Platform.OS === "ios";
-}
+
+const width = Math.round(Dimensions.get('window').width);
+const height = Math.round(Dimensions.get('window').height);
+
+// const checkIsIOs = () => {
+//     return Platform.OS === "ios";
+// }
 
 export default {
     size: {

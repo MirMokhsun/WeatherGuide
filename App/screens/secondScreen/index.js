@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { ImageBackground, View } from 'react-native'
 import { styles } from './style'
-import Header from '../../components/header'
 import images from '../../services/constans/images'
 
 

@@ -1,19 +1,20 @@
 import React from 'react'
+import {Dimensions} from 'react-native'
 import { createDrawerNavigator } from 'react-navigation-drawer'
 import DrawerContent from '../screens/drawerContent'
-import TabNavigator from './tabnavigation';
 import { createAppContainer } from 'react-navigation';
+import { Appflow } from './stack';
+import TabNavigator from './tabnavigation';
 
 
 
-const NavRoutes = { TabNavigator }
-
-export const BurgerMenu = createAppContainer(createDrawerNavigator(
-    NavRoutes,
-    {
-        contentComponent: props => <DrawerContent {...props} />,
-        drawerBackgroundColor: '#ffffff',
+const DrawerNav = createDrawerNavigator({
+    DrawerMenu: {
+        screen: TabNavigator,
     }
-    ))
+}, {
+    drawerWidth: Dimensions.get('window').width - 70,
+    contentComponent: ({ navigation }) => <DrawerContent navigation={navigation} />
+})
 
-export default BurgerMenu;
+export default createAppContainer(DrawerNav)
