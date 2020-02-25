@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     txtIn:
         { height: 60, width: "100%", fontSize: 16, paddingLeft: 50 },
     logBut:
-        { height: 25, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.halfBlack, borderRadius: 35, width: width / 2.5, marginTop: "10%", position: 'relative',},
+        { height: 25, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.halfBlack, borderRadius: 35, width: width / 2.5,  position: 'relative',},
     txt:
         { marginBottom: 5, fontSize: 20, fontFamily: 'OdibeeSans-Regular', marginBottom: "4%" },
 })

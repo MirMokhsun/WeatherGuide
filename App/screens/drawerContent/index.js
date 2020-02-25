@@ -14,12 +14,12 @@ export default class DrawerContent extends Component {
                 resizeMode='cover'
                 source={images.background2} >
                 <Text style={colors.white}>Settings</Text>
-                <TouchableOpacity><Icon name="home" size={25} color={colors.emerald} /></TouchableOpacity>
-                <TouchableOpacity><Icon name="location-on" size={25} color={colors.emerald} /></TouchableOpacity>
-                <TouchableOpacity><Icon name="temperature-celsius" size={25} color={colors.emerald} /></TouchableOpacity>
-                <TouchableOpacity><Icon name="lock" size={25} color={colors.emerald} /></TouchableOpacity>
-                <TouchableOpacity><Icon name="notifications" size={25} color={colors.emerald} /></TouchableOpacity>
-                <TouchableOpacity><Icon name="picture" size={25} color={colors.emerald} /></TouchableOpacity>
+                <TouchableOpacity><Icon name="home" size={25} color={colors.emerald}/></TouchableOpacity>
+                <TouchableOpacity><Icon name="location-on" size={25} color={colors.emerald}/></TouchableOpacity>
+                <TouchableOpacity><Icon name="temperature-celsius" size={25} color={colors.emerald}/></TouchableOpacity>
+                <TouchableOpacity><Icon name="lock" size={25} color={colors.emerald}/></TouchableOpacity>
+                <TouchableOpacity><Icon name="notifications" size={25} color={colors.emerald}/></TouchableOpacity>
+                <TouchableOpacity><Icon name="picture" size={25} color={colors.emerald}/></TouchableOpacity>
                 <TouchableOpacity><Icon name="map" size={25} color={colors.emerald} /></TouchableOpacity>
                 <TouchableOpacity><Icon name="widgets" size={25} color={colors.emerald} /></TouchableOpacity>
                 <TouchableOpacity><Icon name="contact-mail" size={25} color={colors.emerald} /></TouchableOpacity>

@@ -13,7 +13,7 @@ const DrawerNav = createDrawerNavigator({
         screen: TabNavigator,
     }
 }, {
-    drawerWidth: Dimensions.get('window').width - 70,
+    drawerWidth: Dimensions.get('window').width /1.5,
     contentComponent: ({ navigation }) => <DrawerContent navigation={navigation} />
 })
 

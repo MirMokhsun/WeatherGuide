@@ -2,16 +2,15 @@ import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 import { createAppContainer } from 'react-navigation';
 import MainScreen from '../screens/mainScreen';
 import SecondScreen from '../screens/secondScreen';
+import colors from '../services/constans/colors';
+
 
 const tabbarOption = {
     tabBarPosition: 'top',
-    swipeEnabled: true,
     animationEnabled: true,
     backBehavior: 'none',
     tabBarOptions: {
-        pressColor: '#0792fc',
-        activeTintColor: '#000000',
-        inactiveTintColor: '#000000',
+        pressColor: colors.tabColor,
         showIcon: true,
 
         labelStyle: {
@@ -37,12 +36,21 @@ const TabNavigator = createMaterialTopTabNavigator(
 
     },
     {
-        tabBarOptions: tabbarOption,
         tabBarPosition: 'top',
-        swipeEnabled: true,
         animationEnabled: true,
         backBehavior: 'none',
-        safeAreaInset: { bottom: 'always', top: 'never' },
+        pressColor: colors.tabColor,
+            showIcon: true,
+            labelStyle: {
+                marginVertical: 5,
+                fontSize: 10,
+            },
+            indicatorStyle: {
+                padding: 0,
+                height: 0,
+                margin: 0,
+            }
+        
 
     }
 );

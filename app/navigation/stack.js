@@ -22,7 +22,8 @@ export const Appflow = createStackNavigator(
     TabNavigator: {
         screen: DrawerNav,
     navigationOptions: ({navigation})=> ({
-        title: 'jhgjhgjhghg',
+        title: '',
+        
         headerLeft: ()=><Header navigation={navigation}/>
     })},
     }
