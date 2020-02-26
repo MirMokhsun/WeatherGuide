@@ -1,22 +1,20 @@
 import React, { Component } from 'react'
-import { ImageBackground, View, ScrollView } from 'react-native'
+import {  View, ScrollView } from 'react-native'
 import { styles } from './style'
-import images from '../../services/constans/images';
+import colors from '../../services/constans/colors'
 
 
 export default class MainScreen extends Component {
     render() {
         return (
-            <ImageBackground style={styles.container}
-                resizeMode='cover'
-                source={images.wallpaper} >
+            <View style={{backgroundColor: colors.halfBlack, flex : 1,}}>
                 <ScrollView style={styles.container}>
                     <View style={styles.WB}></View>
                     <View style={styles.WBH}></View>
                     <View style={styles.WBD}></View>
                     <View style={styles.WBD}></View>
                 </ScrollView>
-            </ImageBackground>
+            </View>
         )
     }
 }

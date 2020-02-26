@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View, Image, TouchableOpacity } from 'react-native'
-import { styles } from '../../screens/mainScreen/style'
+import { styles } from './style'
 import images from '../../services/constans/images'
 
 const Header =({ navigation }) =>{
@@ -10,7 +10,6 @@ const Header =({ navigation }) =>{
             <TouchableOpacity onPress={() => navigation.openDrawer()}>
                 <Image style={styles.Img} source={images.burger}></Image>
             </TouchableOpacity>
-            {/* <Text style={styles.txt}>Weather Guide</Text> */}
         </View>
     )
 }

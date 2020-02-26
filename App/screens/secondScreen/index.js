@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { ImageBackground, View } from 'react-native'
+import { View } from 'react-native'
 import { styles } from './style'
-import images from '../../services/constans/images'
+import colors from '../../services/constans/colors'
 
 
 export default class SecondPage extends Component {
@@ -12,12 +12,11 @@ export default class SecondPage extends Component {
         const { navigation } = this.props;
 
         return (
-            <ImageBackground style={styles.container}
-                resizeMode='cover'
-                source={images.background} >
+            <View style={{ backgroundColor: colors.halfBlack, flex: 1, }}>
                 <View style={styles.WB}>
                 </View>
-            </ImageBackground>
+            </View>
+
         )
     }
 }

@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native';
 import colors from '../../services/constans/colors';
 
 const screenWidth = Math.round(Dimensions.get('window').width);
@@ -10,7 +10,8 @@ export const styles = StyleSheet.create({
     txt: {
         marginLeft: 30,
         fontSize: 45,
-        fontFamily: 'Roboto-Bold'    },
+        fontFamily: 'OdibeeSans-Regular'
+    },
     VB: {
         marginTop: 4,
         flexDirection: 'row',
