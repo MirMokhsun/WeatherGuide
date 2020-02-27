@@ -1,20 +1,13 @@
-import React from 'react'
-import {Dimensions} from 'react-native'
 import { createDrawerNavigator } from 'react-navigation-drawer'
-import DrawerContent from '../screens/drawerContent'
 import { createAppContainer } from 'react-navigation';
 import TabNavigator from './tabnavigation';
-
+import components from './components'
 
 
 const DrawerNav = createDrawerNavigator({
     DrawerMenu: {
         screen: TabNavigator,
     }
-}, {
-    drawerBackgroundColor: 'black',
-    drawerWidth: Dimensions.get('window').width /1.5,
-    contentComponent: ({ navigation }) => <DrawerContent navigation={navigation} />
-})
+}, components.ContComp)
 
 export default createAppContainer(DrawerNav)

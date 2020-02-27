@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navigation from './app/navigation/navigation'
+import { strings } from './app/i18n/i18n'
 
 
 // export default function App() {
@@ -11,7 +12,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <Navigation />
+      <Navigation screenProps={{localText: strings}}/>
     )
   }
 }

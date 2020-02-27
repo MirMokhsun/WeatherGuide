@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image, TextInput, KeyboardAvoidingView } from 'react-native';
+import { View, Text, SafeAreaView, TouchableOpacity, Image, TextInput, KeyboardAvoidingView, Keyboard, ScrollView } from 'react-native';
 import colors from '../../services/constans/colors'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { styles } from './style';
@@ -22,15 +22,17 @@ export const LoginScreen = ({ navigation }) => {
       alert('Username or Password is incorrect')
     }
   }
+  var _scrollToBottomY
 
   return (
-    <KeyboardAvoidingView style={{ flex: 1 }} behavior="padding" keyboardVerticalOffset="-250" enabled>
-      <View style={styles.container}>
-        <ScrollView style={{ flex: 1 }}>
-          <View style={{ flex: 1, alignItems: 'center', }}>
+    <KeyboardAvoidingView style={styles.keyView} behavior="padding" keyboardVerticalOffset="-250" keyboardShouldPersistTaps={'always'}
+      showsVerticalScrollIndicator={false}>
+      <ScrollView style={{ flex: 1 }} >
+        <View style={styles.container}>
+          <View style={styles.imageBox}>
             <Image
               source={images.logo}
-              style={{ maxHeight: 145, maxWidth: 145, marginTop: 10, }} />
+              style={styles.image} />
             <Text style={styles.txt}>Weather Guide</Text>
           </View>
           <View style={styles.InputsView}>
@@ -41,7 +43,7 @@ export const LoginScreen = ({ navigation }) => {
                   style={styles.txtIn}
                   onChangeText={text => setUsername(text)}
                   value={username} />
-                <View style={{ width: 60, height: '100%', position: 'absolute', justifyContent: 'center', alignItems: 'center', }}>
+                <View style={styles.icon}>
                   <Icon name="login" size={25} color={colors.emerald} />
                 </View>
               </View>
@@ -56,7 +58,7 @@ export const LoginScreen = ({ navigation }) => {
                     value={password}
                   />
                 </View>
-                <View style={{ width: 60, height: '100%', position: 'absolute', justifyContent: 'center', alignItems: 'center', }}>
+                <View style={styles.icon}>
                   <Icon name="textbox-password" size={25} color={colors.emerald} />
                 </View>
               </View>
@@ -74,8 +76,8 @@ export const LoginScreen = ({ navigation }) => {
               </TouchableOpacity >
             </View>
           </View>
-        </ScrollView>
-      </View>
+        </View>
+      </ScrollView>
     </KeyboardAvoidingView >
   );
 }
