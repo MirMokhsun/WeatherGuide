@@ -2,7 +2,7 @@ import { createStackNavigator } from 'react-navigation-stack'
 import { LoginScreen } from '../screens/loginScreen'
 import { RegistrScreen } from '../screens/registrScreen'
 import DrawerNav from './drawer'
-import components from './components'
+import navComp from '../services/constans/navComp'
 
 export const AuthenticationStack = createStackNavigator({
     LoginScreen: { screen: LoginScreen },
@@ -19,7 +19,7 @@ export const Appflow = createStackNavigator(
     {
         TabNavigator: {
             screen: DrawerNav,
-            navigationOptions: components.NavOptions
+            navigationOptions: navComp.NavOptions
         },
     }
 )

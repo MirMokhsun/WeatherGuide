@@ -4,5 +4,6 @@ export default {
     burger: require('../../assets/logos/menu_white.png'),
     background: require('../../assets/images/Background.jpg'),
     logo: require('../../assets/logos/cloudy-1.png'),
+    sun: require('../../assets/logos/sun.png'),
     background2: require('../../assets/images/Background2.jpg'),
 }

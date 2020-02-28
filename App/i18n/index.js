@@ -1,6 +1,6 @@
-export default  {
+export default {
     en: {
-        splash: 
+        splash:
         {
             title: 'Weather Guide'
         },
@@ -22,12 +22,12 @@ export default  {
         login:
         {
             title: 'Weather Guide',
-            holder1 : 'Enter your email',
+            holder1: 'Enter your email',
             holder2: 'Enter your password',
             regBut: 'Go To Registration',
             appBut: 'Go To Appflow'
         },
-        registration: 
+        registration:
         {
             title: 'Weather Guide',
             holder1: 'Enter your email',
@@ -38,9 +38,9 @@ export default  {
 
     },
     ru: {
-        splash: 
+        splash:
         {
-            title: 'Weather Guide'
+            title: 'Погодный гид'
         },
         drawerContent: {
             settings: 'Настройки',
@@ -58,15 +58,15 @@ export default  {
         },
         login:
         {
-            title: 'Weather Guide',
-            holder1 : 'Enter your email',
+            title: 'Погодный гид',
+            holder1: 'Enter your email',
             holder2: 'Enter your password',
             regBut: 'Go To Registration',
             appBut: 'Go To Appflow'
         },
-        registration: 
+        registration:
         {
-            title: 'Weather Guide',
+            title: 'Погодный гид',
             holder1: 'Enter your email',
             holder2: 'Enter your password',
             holder3: 'Comfrim your password',

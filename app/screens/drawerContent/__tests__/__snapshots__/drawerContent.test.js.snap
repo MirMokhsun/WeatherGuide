@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Login snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "marginHorizontal": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "space-around",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#rgba(255,255,255,0.6)",
+          "fontFamily": "Roboto-Bold",
+          "fontSize": 45,
+        }
+      }
+    >
+      Settings
+    </Text>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="home"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Return to HomeScreen
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="flare"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Geolocation
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="add-location"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Temperature
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="lock"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Lock
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="notifications"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Notifications
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="airplay"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Background
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="map"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Weather-Map
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="widgets"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Widgets
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="contact-mail"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Tell about problem
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="message"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Contact us
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="all-out"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Log Out
+      </Text>
+    </TouchableOpacity>
+  </View>
+</View>
+`;

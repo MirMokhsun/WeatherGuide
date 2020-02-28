@@ -5,7 +5,7 @@ exports[`SplashScreen SplashScreen snapshot 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#d3f4ff",
+      "backgroundColor": "rgba(0,0,0,0.3)",
       "flex": 1,
       "justifyContent": "center",
     }
@@ -14,19 +14,19 @@ exports[`SplashScreen SplashScreen snapshot 1`] = `
   <Loader
     source={
       Object {
-        "testUri": "../../../app/assets/logos/sun.png",
+        "testUri": "../../../app/assets/logos/cloudy-1.png",
       }
     }
   />
   <Text
     style={
       Object {
-        "fontFamily": "OdibeeSans-Regular",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 45,
       }
     }
   >
-    Weather Guide
+     Weather Guide
   </Text>
 </View>
 `;

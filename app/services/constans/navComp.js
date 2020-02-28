@@ -1,8 +1,10 @@
-import colors from '../services/constans/colors';
+import colors from './colors';
+import {Text} from 'react-native'
 import React from 'react'
-import Header from '../components/header'
 import Icon from 'react-native-vector-icons/Entypo';
-import DrawerContent from '../screens/drawerContent'
+import DrawerContent from '../../screens/drawerContent'
+import HeaderRight from '../../components/headerRight'
+import HeaderLeft from '../../components/headerLeft'
 
 
 export default {
@@ -33,11 +35,12 @@ export default {
     NavOptions: ({ navigation }) => ({
         headerStyle: {
             backgroundColor: colors.Back,
-            height: 35,
+            height: 40,
         },
         showLabel: false,
         showIcon: true,
-        headerLeft: () => <Header navigation={navigation} />
+        headerLeft: () => <HeaderLeft navigation={navigation} />,
+        headerRight: () => <HeaderRight navigation={navigation} />
     }),
     Icon: {
         tabBarIcon: ({ tintColor }) => (

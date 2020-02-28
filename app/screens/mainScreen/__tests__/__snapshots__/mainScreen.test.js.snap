@@ -1,15 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main Main snapshot 1`] = `
-<ImageBackground
-  resizeMode="cover"
-  source={
-    Object {
-      "testUri": "../../../app/assets/images/Wallpaper.jpg",
-    }
-  }
+<View
   style={
     Object {
+      "backgroundColor": "rgba(0,0,0,0.3)",
       "flex": 1,
     }
   }
@@ -70,5 +65,5 @@ exports[`Main Main snapshot 1`] = `
       }
     />
   </ScrollViewMock>
-</ImageBackground>
+</View>
 `;

@@ -1,15 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SecondPage SecondPage snapshot 1`] = `
-<ImageBackground
-  resizeMode="cover"
-  source={
-    Object {
-      "testUri": "../../../app/assets/images/Background.jpg",
-    }
-  }
+<View
   style={
     Object {
+      "backgroundColor": "rgba(0,0,0,0.3)",
       "flex": 1,
     }
   }
@@ -26,5 +21,5 @@ exports[`SecondPage SecondPage snapshot 1`] = `
       }
     }
   />
-</ImageBackground>
+</View>
 `;

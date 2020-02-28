@@ -24,7 +24,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>0/12</span>
             </div>
         
             
@@ -38,14 +38,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
@@ -81,67 +81,64 @@
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
-import { createStackNavigato<span class="cstat-no" title="statement not covered" >r } from 'react-navigation-stack'</span>
-import LoginS<span class="cstat-no" title="statement not covered" >creen from '../screens/login'</span>
-import RegistrScreen <span class="cstat-no" title="statement not covered" >from '../screens/registrScreen'</span>
-import BurgerM<span class="cstat-no" title="statement not covered" >enu from './drawer';</span>
-import Header <span class="cstat-no" title="statement not covered" >from '../components/header'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
-&nbsp;
-&nbsp;
-&nbsp;
-const navigationOptions <span class="cstat-no" title="statement not covered" >= {</span>
-};
-&nbsp;
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { crea<span class="cstat-no" title="statement not covered" >teStackNavigator } from 'react-navigation-stack'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
+import { LoginScree<span class="cstat-no" title="statement not covered" >n } from '../screens/loginScreen'</span>
+import { RegistrScree<span class="cstat-no" title="statement not covered" >n } from '../screens/registrScreen'</span>
+import DrawerN<span class="cstat-no" title="statement not covered" >av from './drawer'</span>
+import navComp <span class="cstat-no" title="statement not covered" >from '../services/constans/navComp'<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
 &nbsp;
 export const Authenticatio<span class="cstat-no" title="statement not covered" >nStack = createStackNavigator({</span>
-    LoginScreen,
-    RegistrScreen,
-}, navigationOption<span class="cstat-no" title="statement not covered" >s);</span>
-&nbsp;
-export const A<span class="cstat-no" title="statement not covered" >ppflow = createStackNavigator({</span>
-    BurgerMenu: {
-        screen: BurgerMenu,
-        navigationOptions: (prop<span class="fstat-no" title="function not covered" >s) =&gt; ({<span class="cstat-no" title="statement not covered" ></span></span>
-            header: &lt; Header /&gt;<span class="cstat-no" title="statement not covered" ></span>
-        })
+    LoginScreen: { screen: LoginScreen },
+    RegistrScreen: { screen: RegistrScreen },
+},
+    {
+        headerMode: 'non<span class="cstat-no" title="statement not covered" >e'</span>
     },
+);
 &nbsp;
-})</pre></td></tr></table></pre>
+&nbsp;
+&nbsp;
+export const A<span class="cstat-no" title="statement not covered" >ppflow = createStackNavigator(</span>
+    {
+        TabNavigator: {
+            screen: DrawerNav,
+            navigationOptions: navComp.NavOptions<span class="cstat-no" title="statement not covered" ></span>
+        },
+    }
+)
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Feb 23 2020 21:41:11 GMT+0400 (Azerbaijan Standard Time)
+                at Fri Feb 28 2020 15:36:59 GMT+0400 (Azerbaijan Standard Time)
             </div>
         </div>
         <script src="..\prettify.js"></script>

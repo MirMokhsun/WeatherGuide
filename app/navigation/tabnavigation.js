@@ -2,22 +2,22 @@ import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 import { createAppContainer } from 'react-navigation';
 import MainScreen from '../screens/mainScreen';
 import SecondScreen from '../screens/secondScreen';
-import components from './components'
+import navComp from '../services/constans/navComp'
 
 const TabNavigator = createMaterialTopTabNavigator(
     {
         MainScreen: {
             screen: MainScreen,
-            navigationOptions: components.Icon
+            navigationOptions: navComp.Icon
         },
         SecondScreen: {
             screen: SecondScreen,
-            navigationOptions: components.Icon
+            navigationOptions: navComp.Icon
         },
     },
     {
         order: ['MainScreen', 'SecondScreen'],
-        tabBarOptions: components.TabBarOptions
+        tabBarOptions: navComp.TabBarOptions
     }
 );
 

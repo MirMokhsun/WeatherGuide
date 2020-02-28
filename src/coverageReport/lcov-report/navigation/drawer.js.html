@@ -24,28 +24,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/24</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/8</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
-                <span class="quiet">Functions</span>
                 <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
@@ -68,56 +68,38 @@
 <a name='L10'></a><a href='#L10'>10</a>
 <a name='L11'></a><a href='#L11'>11</a>
 <a name='L12'></a><a href='#L12'>12</a>
-<a name='L13'></a><a href='#L13'>13</a>
-<a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a>
-<a name='L19'></a><a href='#L19'>19</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L13'></a><a href='#L13'>13</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
-import { createDrawerNavigato<span class="cstat-no" title="statement not covered" >r } from 'react-navigation-drawer'</span>
-import DrawerContent <span class="cstat-no" title="statement not covered" >from '../screens/drawerContent'</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { crea<span class="cstat-no" title="statement not covered" >teDrawerNavigator } from 'react-navigation-drawer'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
+import { createAppConta<span class="cstat-no" title="statement not covered" >iner } from 'react-navigatio</span>n';
 import TabNavigator f<span class="cstat-no" title="statement not covered" >rom './tabnavigation';</span>
-import { createAppConta<span class="cstat-no" title="statement not covered" >iner } from 'react-navigatio</span>n';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+import navComp <span class="cstat-no" title="statement not covered" >from '../services/constans/navComp'<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
 &nbsp;
 &nbsp;
-&nbsp;
-const NavRoutes <span class="cstat-no" title="statement not covered" >= { TabNavigator }</span>
-&nbsp;
-export const Burg<span class="cstat-no" title="statement not covered" >erMenu = createAppContainer(createDrawerNavigator(</span>
-    NavRoutes,
-    {
-        contentComponent: pro<span class="fstat-no" title="function not covered" >ps =&gt; &lt;DrawerCont</span>ent {...<span class="cstat-no" title="statement not covered" >props} /&gt;,</span>
-        drawerBackgroundColor: '#ffffff<span class="cstat-no" title="statement not covered" >',</span>
+const DrawerNav <span class="cstat-no" title="statement not covered" >= createDrawerNavigator({</span>
+    DrawerMenu: {
+        screen: TabNavigator,
     }
-    ))
+}, navComp.ContComp)
 &nbsp;
-<span class="cstat-no" title="statement not covered" >export defa<span class="cstat-no" title="statement not covered" ></span>ult BurgerMenu;</span></pre></td></tr></table></pre>
+<span class="cstat-no" title="statement not covered" >export default createAppContainer(DrawerNav)<span class="cstat-no" title="statement not covered" ></span></span></pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Feb 23 2020 21:41:11 GMT+0400 (Azerbaijan Standard Time)
+                at Fri Feb 28 2020 15:36:59 GMT+0400 (Azerbaijan Standard Time)
             </div>
         </div>
         <script src="..\prettify.js"></script>

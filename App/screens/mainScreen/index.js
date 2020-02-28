@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
-import {  View, ScrollView } from 'react-native'
+import React from 'react'
+import { View, ScrollView, Text, Image } from 'react-native'
 import { styles } from './style'
 import colors from '../../services/constans/colors'
+import WeatherBox from '../../components/weatherBox'
 
 
-export default class MainScreen extends Component {
-    render() {
-        return (
-            <View style={{backgroundColor: colors.halfBlack, flex : 1,}}>
-                <ScrollView style={styles.container}>
-                    <View style={styles.WB}></View>
-                    <View style={styles.WBH}></View>
-                    <View style={styles.WBD}></View>
-                    <View style={styles.WBD}></View>
-                </ScrollView>
-            </View>
-        )
-    }
+const MainScreen = ({ navigation }) => {
+    return (
+        <View style={{ backgroundColor: colors.halfBlack, flex: 1, }}>
+
+            <ScrollView style={styles.container}>
+                <WeatherBox />
+                <View style={styles.WBH}></View>
+            </ScrollView>
+        </View>
+    )
 }
+
+export default MainScreen

@@ -7,11 +7,8 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    txt: {
-        marginLeft: 30,
-        fontSize: 45,
-        fontFamily: 'OdibeeSans-Regular'
-    },
+    txt:
+        { marginTop: 5, fontSize: 18, fontFamily: 'Roboto-Black' },
     VB: {
         marginTop: 4,
         flexDirection: 'row',
@@ -20,6 +17,7 @@ export const styles = StyleSheet.create({
     },
     Img: { marginLeft: 10, width: 35, height: 50 },
     WB: {
+        flex: 3,
         height: 125,
         width: screenWidth - 10,
         marginTop: 15,
@@ -28,6 +26,7 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.halfBlack
     },
     WBH: {
+        flex: 2,
         height: 150,
         width: screenWidth - 10,
         marginTop: 25,
@@ -36,6 +35,7 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.halfBlack
     },
     WBD: {
+        flex: 2,
         height: 150,
         width: screenWidth - 10,
         marginTop: 15,
