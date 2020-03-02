@@ -13,8 +13,6 @@ export const AuthenticationStack = createStackNavigator({
     },
 );
 
-
-
 export const Appflow = createStackNavigator(
     {
         TabNavigator: {

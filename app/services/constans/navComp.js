@@ -1,5 +1,4 @@
 import colors from './colors';
-import {Text} from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Entypo';
 import DrawerContent from '../../screens/drawerContent'
@@ -21,8 +20,8 @@ export default {
             elevation: 24,
             height: 30
         },
-        showLabel: false,
         showIcon: true,
+        showLabel: false,
         activeTintColor: colors.emerald,
         inactiveTintColor: colors.halfWhite,
         pressColor: colors.emerald,
@@ -37,8 +36,8 @@ export default {
             backgroundColor: colors.Back,
             height: 40,
         },
-        showLabel: false,
         showIcon: true,
+        // showLabel: false,
         headerLeft: () => <HeaderLeft navigation={navigation} />,
         headerRight: () => <HeaderRight navigation={navigation} />
     }),
@@ -49,6 +48,7 @@ export default {
     },
     ContComp: {
         drawerBackgroundColor: colors.Back,
+        showLabel: false,
         contentComponent: ({ navigation }) => <DrawerContent navigation={navigation} />
     }
 

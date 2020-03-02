@@ -7,7 +7,7 @@ export default {
     pBlue: 'rgba(211, 244, 255, 0.4)',
     halfWhite: 'rgba(255,255,255,0.3)',
     halfBlack: 'rgba(0,0,0,0.3)',
-    Back: 'black',
+    Back: 'gray',
     tabColor: 'rgba(31, 31, 31)',
 
 }

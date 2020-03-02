@@ -8,7 +8,7 @@ const Navigation = createAppContainer(
         Auth: AuthenticationStack,
         App: Appflow,
     }, {
-        
+
         initialRouteName: 'SplashScreen'
     }))
 

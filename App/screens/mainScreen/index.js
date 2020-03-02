@@ -8,7 +8,6 @@ import WeatherBox from '../../components/weatherBox'
 const MainScreen = ({ navigation }) => {
     return (
         <View style={{ backgroundColor: colors.halfBlack, flex: 1, }}>
-
             <ScrollView style={styles.container}>
                 <WeatherBox />
                 <View style={styles.WBH}></View>

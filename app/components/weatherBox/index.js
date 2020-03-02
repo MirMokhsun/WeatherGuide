@@ -3,12 +3,16 @@ import { View, Text, Image } from 'react-native'
 import { styles } from './style'
 import images from '../../services/constans/images'
 
-const WeatherBox = ({ navigation }) => {
+// export const wetherMock = {
+//     date: 'fr 2/28/2020',
+// }
+
+const WeatherBox = ({ navigation, wetherMock }) => {
     return (
         <View style={styles.container}>
             <View style={styles.firstBox}>
                 <View style={styles.dateBox}>
-                    <Text style={styles.txt}>fr 2/28/2020</Text>
+                    <Text style={styles.txt}> fr 2/28/2020</Text>
                     <Text style={styles.txt}>4:12</Text>
                 </View>
                 <View style={styles.tempBox}>

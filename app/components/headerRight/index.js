@@ -1,16 +1,13 @@
 import React from 'react'
-import { View, TouchableOpacity } from 'react-native'
-import {styles} from './style'
-import Icon  from 'react-native-vector-icons/Entypo'
-import colors from '../../services/constans/colors'
+import { TouchableOpacity } from 'react-native'
+import { styles } from './style'
+import iconsEntypo from '../../services/constans/icons/iconsEntypo'
 
-const HeaderRight = ({ navigation }) => {
+const HeaderRight = ({ navigation, }) => {
     return (
-        <View style={styles.qwe}>
-            <TouchableOpacity onPress={() => navigation.navigate('SecondScreen')}>
-                <Icon style={{marginHorizontal: 5}}size={40} color={colors.emerald} name="location-pin" />
-            </TouchableOpacity>
-        </View>
+        <TouchableOpacity style={styles.rightBut} onPress={() => navigation.navigate('SecondScreen')}>
+            {iconsEntypo.headerRight}
+        </TouchableOpacity>
     )
 }
 

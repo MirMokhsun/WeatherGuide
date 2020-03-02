@@ -14,12 +14,40 @@ exports[`SecondPage SecondPage snapshot 1`] = `
       Object {
         "backgroundColor": "rgba(255,255,255,0.3)",
         "borderRadius": 3,
-        "height": 75,
+        "height": 60,
         "marginLeft": 5,
         "marginTop": 15,
         "width": 740,
       }
     }
-  />
+  >
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        name="plus"
+        size={50}
+      />
+      <Text
+        style={
+          Object {
+            "color": "gray",
+            "fontFamily": "Roboto-Black",
+            "fontSize": 25,
+          }
+        }
+      >
+        Press to add location
+      </Text>
+    </TouchableOpacity>
+  </View>
 </View>
 `;

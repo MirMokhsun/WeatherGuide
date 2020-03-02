@@ -61,6 +61,7 @@ exports[`Login Login snapshot 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       activeOpacity={0.2}
+      onPress={null}
       style={
         Object {
           "alignItems": "center",
@@ -90,6 +91,37 @@ exports[`Login Login snapshot 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       activeOpacity={0.2}
+      onPress={null}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="rgba(33, 57, 156,0.6)"
+        name="home"
+        size={25}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#rgba(255,255,255,0.6)",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 18,
+          }
+        }
+      >
+        Return to HomeScreen
+      </Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={null}
       style={
         Object {
           "alignItems": "center",
@@ -119,6 +151,7 @@ exports[`Login Login snapshot 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       activeOpacity={0.2}
+      onPress={null}
       style={
         Object {
           "alignItems": "center",
@@ -148,6 +181,7 @@ exports[`Login Login snapshot 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       activeOpacity={0.2}
+      onPress={null}
       style={
         Object {
           "alignItems": "center",
@@ -177,6 +211,7 @@ exports[`Login Login snapshot 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       activeOpacity={0.2}
+      onPress={null}
       style={
         Object {
           "alignItems": "center",
@@ -206,6 +241,7 @@ exports[`Login Login snapshot 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       activeOpacity={0.2}
+      onPress={null}
       style={
         Object {
           "alignItems": "center",
@@ -235,6 +271,7 @@ exports[`Login Login snapshot 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       activeOpacity={0.2}
+      onPress={null}
       style={
         Object {
           "alignItems": "center",
@@ -264,6 +301,7 @@ exports[`Login Login snapshot 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       activeOpacity={0.2}
+      onPress={null}
       style={
         Object {
           "alignItems": "center",
@@ -293,6 +331,7 @@ exports[`Login Login snapshot 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       activeOpacity={0.2}
+      onPress={null}
       style={
         Object {
           "alignItems": "center",

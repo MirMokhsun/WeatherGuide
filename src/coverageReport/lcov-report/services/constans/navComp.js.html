@@ -24,7 +24,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/18</span>
+                <span class='fraction'>0/20</span>
             </div>
         
             
@@ -38,14 +38,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>0/12</span>
             </div>
         
             
@@ -107,11 +107,15 @@
 <a name='L49'></a><a href='#L49'>49</a>
 <a name='L50'></a><a href='#L50'>50</a>
 <a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -133,13 +137,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,7 +146,16 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -160,9 +166,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import colors<span class="cstat-no" title="statement not covered" > from './colors';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
 import React <span class="cstat-no" title="statement not covered" >from 'react'</span>
-import Header <span class="cstat-no" title="statement not covered" >from '../../components/header'</span>
 import Icon fr<span class="cstat-no" title="statement not covered" >om 'react-native-vector-icons/Entypo';</span>
-import DrawerContent <span class="cstat-no" title="statement not covered" >from '../../screens/drawerContent'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+import DrawerContent <span class="cstat-no" title="statement not covered" >from '../../screens/drawerContent'</span>
+import HeaderRight <span class="cstat-no" title="statement not covered" >from '../../components/headerRight'</span>
+import HeaderLeft <span class="cstat-no" title="statement not covered" >from '../../components/headerLeft'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
 &nbsp;
 &nbsp;
 <span class="cstat-no" title="statement not covered" >export default {</span>
@@ -179,8 +186,8 @@ import DrawerContent <span class="cstat-no" title="statement not covered" >from 
             elevation: 24,
             height: 30
         },
-        showLabel: false,
         showIcon: true,
+        showLabel: false,
         activeTintColor: colors.emerald,
         inactiveTintColor: colors.halfWhite,
         pressColor: colors.emerald,
@@ -195,9 +202,10 @@ import DrawerContent <span class="cstat-no" title="statement not covered" >from 
             backgroundColor: colors.Back,
             height: 40,
         },
-        showLabel: false,
         showIcon: true,
-        headerLeft: () =&gt; &lt;<span class="fstat-no" title="function not covered" >Header navi</span>gat<span class="cstat-no" title="statement not covered" >ion={navigation} /&gt;</span>
+        // showLabel: false,
+        headerLeft: () =&gt; &lt;<span class="fstat-no" title="function not covered" >HeaderLeft </span>nav<span class="cstat-no" title="statement not covered" >igation={navigation} /&gt;,</span>
+        headerRight: () =&gt; &lt;<span class="fstat-no" title="function not covered" >HeaderRight </span>nav<span class="cstat-no" title="statement not covered" >igation={navigation} /&gt;</span>
     }),
     Icon: {
         tabBarIcon: ({ ti<span class="fstat-no" title="function not covered" >ntColor }) </span>=&gt; (<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
@@ -206,6 +214,7 @@ import DrawerContent <span class="cstat-no" title="statement not covered" >from 
     },
     ContComp: {
         drawerBackgroundColor: colors.Back,
+        showLabel: false,
         contentComponent: ({ na<span class="fstat-no" title="function not covered" >vigation }) =&gt; &lt;D</span>rawerContent navigation={<span class="cstat-no" title="statement not covered" >navigation} /&gt;<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
     }
 &nbsp;
@@ -216,7 +225,7 @@ import DrawerContent <span class="cstat-no" title="statement not covered" >from 
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Feb 28 2020 15:36:59 GMT+0400 (Azerbaijan Standard Time)
+                at Mon Mar 02 2020 17:21:30 GMT+0400 (Azerbaijan Standard Time)
             </div>
         </div>
         <script src="..\..\prettify.js"></script>

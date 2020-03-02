@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, TextInput, } from 'react-native';
-import colors from '../../services/constans/colors'
+import colors from '../../../services/constans/colors'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { styles } from './style';
+import { styles } from '../style';
 
 const textInput = (placeHolder, setUser, iconName, value) => {
     return (
-        <View style={styles.VB1}>
+        <View style={styles.viewBox1}>
             <View style={styles.txtInView}>
                 <TextInput
                     placeholder={placeHolder}
@@ -20,6 +20,5 @@ const textInput = (placeHolder, setUser, iconName, value) => {
         </View>
     )
 }
-
 
 export default textInput
