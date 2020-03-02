@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { styles } from '../style';
 
-const ButtonBox = ({ navigation }) => {
+export default function ButtonBox({ navigation }) {
 
     const CheckLogin = () => {
         navigation.navigate('LoginScreen')
@@ -17,4 +17,3 @@ const ButtonBox = ({ navigation }) => {
     )
 }
 
-export default ButtonBox

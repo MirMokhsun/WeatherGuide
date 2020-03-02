@@ -33,12 +33,6 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    imgBox:
-    {
-        flex: 1,
-        alignItems: 'center',
-        marginTop: 30
-    },
     txtBut:
     {
         fontSize: 14,

@@ -4,7 +4,7 @@ import { styles } from '../style';
 import textInput from '../textInput'
 
 
-const InputBox = () => {
+export default function InputBox() {
     return (
         <View style={styles.InputsView}>
             {textInput('Enter your email', null, 'login', null)}
@@ -14,4 +14,3 @@ const InputBox = () => {
     )
 }
 
-export default InputBox

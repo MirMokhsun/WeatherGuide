@@ -3,7 +3,7 @@ import { View, Text, Image, } from 'react-native';
 import { styles } from '../style';
 import images from '../../../services/constans/images'
 
-const ImgBox = () => {
+export default function ImgBox() {
     return (
         <View style={styles.imgBox}>
             <Image
@@ -14,4 +14,3 @@ const ImgBox = () => {
     )
 }
 
-export default ImgBox
