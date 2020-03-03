@@ -19,4 +19,7 @@ export default texts = {
     TEXT_IN1: 'Enter your email',
     TEXT_IN2: 'Enter your password',
     TEXT_IN3: 'Comfrim your password',
+    WIND_VEL: 'Wind velocity',
+    STATUS_PANEL: 'Status Panel',
+    DONE: 'Done'
 }

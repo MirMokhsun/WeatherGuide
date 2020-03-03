@@ -6,7 +6,7 @@ const Switcher = ({ title1, title2 }) => {
     const [activeSwitch, setActiveSwitch] = useState(1)
 
     return (
-        <View>
+        <View style={{ marginRight: 20 }}>
             <SwitchButton
                 onValueChange={() => setActiveSwitch(2)}
                 text1={title1}

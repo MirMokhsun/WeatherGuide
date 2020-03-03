@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native'
+import { StyleSheet } from 'react-native'
 import colors from '../../services/constans/colors';
 
 
@@ -13,8 +13,26 @@ export const styles = StyleSheet.create({
     },
     txt:
     {
+        marginLeft: 20,
         color: colors.white,
         fontSize: 20,
         fontFamily: 'Roboto-Bold'
     },
+    switchCont:
+    {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        // paddingVertical: '4%',
+        borderBottomWidth: 1,
+        height: "13.5%",
+        width: "100%",
+        borderColor: 'white',
+        alignItems: 'center',
+    },
+    btnTxt:
+    {
+        color: colors.white,
+        fontSize: 20,
+        fontFamily: 'Roboto-Bold'
+    }
 })
