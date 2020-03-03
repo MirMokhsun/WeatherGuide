@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import Navigation from './app/navigation/navigation'
 import { strings } from './app/i18n/i18n'
-
+import Mapa from './app/navigation/navigation'
 
 // export default function App() {
 
@@ -12,7 +11,8 @@ export default class App extends Component {
 
   render() {
     return (
-      <Navigation screenProps={{localText: strings}}/>
+      <Mapa />
+      // <Navigation screenProps={{localText: strings}}/>
     )
   }
 }
