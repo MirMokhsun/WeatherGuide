@@ -9,5 +9,4 @@ export default {
     halfBlack: 'rgba(0,0,0,0.3)',
     Back: 'gray',
     tabColor: 'rgba(31, 31, 31)',
-
 }

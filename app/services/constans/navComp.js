@@ -37,7 +37,7 @@ export default {
             height: 40,
         },
         showIcon: true,
-        // showLabel: false,
+        title: null,
         headerLeft: () => <HeaderLeft navigation={navigation} />,
         headerRight: () => <HeaderRight navigation={navigation} />
     }),

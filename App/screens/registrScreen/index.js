@@ -11,15 +11,9 @@ export const RegistrScreen = ({ navigation }) => {
     <KeyboardAvoidingView style={styles.keyView} behavior="padding" keyboardVerticalOffset="-250" keyboardShouldPersistTaps={'always'}
       showsVerticalScrollIndicator={false}>
       <ScrollView style={{ flex: 1 }} contentContainerStyle={styles.scView}>
-        <View style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}>
-          <ImgBox />
-          <InputBox />
-          <ButtonBox navigation={navigation} />
-        </View>
+        <ImgBox />
+        <InputBox />
+        <ButtonBox navigation={navigation} />
       </ScrollView>
     </KeyboardAvoidingView >
   );

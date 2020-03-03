@@ -1,12 +1,12 @@
 import 'react-native';
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import DrawerContent from '..';
+import RegistrScreen from '..';
 
-describe('Login', () => {
-    test('Login snapshot', () => {
+describe('RegistrScreen', () => {
+    test('RegistrScreen snapshot', () => {
         const renderer = new ShallowRenderer();
-        const snapshot = renderer.render(<DrawerContent />);
+        const snapshot = renderer.render(<RegistrScreen />);
         expect(snapshot).toMatchSnapshot();
     });
 });

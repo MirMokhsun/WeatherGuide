@@ -1,20 +1,21 @@
-import React  from 'react'
-import { View,TouchableOpacity, Text } from 'react-native'
+import React from 'react'
+import { View, TouchableOpacity, Text } from 'react-native'
 import { styles } from './style'
 import colors from '../../services/constans/colors'
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import iconsMaterialComunityIcons from '../../services/constans/icons/iconsMaterialComunityIcons'
+import texts from '../../services/constans/texts'
 
 
-const SecondPage =({ navigation }) => {
-        return (
-            <View style={{ backgroundColor: colors.halfBlack, flex: 1, }}>
-                <View style={styles.WB}>
-                    <TouchableOpacity style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center',}}>
-                        <Icon name="plus" size={50} />
-                        <Text style={styles.txt}>Press to add location</Text>
-                    </TouchableOpacity>
-                </View>
+const SecondPage = ({ navigation }) => {
+    return (
+        <View style={styles.container}>
+            <View style={styles.buttStl}>
+                <TouchableOpacity style={styles.touchOpStl}>
+                    {iconsMaterialComunityIcons.SecondPage}
+                    <Text style={styles.txt}>{texts.ADD_LOC}</Text>
+                </TouchableOpacity>
             </View>
-        )
+        </View>
+    )
 }
 export default SecondPage

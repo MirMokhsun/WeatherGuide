@@ -1,29 +1,29 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React from 'react'
+import { Text, View, TouchableOpacity } from 'react-native'
 import { styles } from './style'
-import Buttons from '../../components/drawer'
+import texts from '../../services/constans/texts'
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import colors from '../../services/constans/colors'
+import items from '../../components/drawer'
 
-
-export default class DrawerContent extends Component {
-    render() {
-        return (
-            <View style={styles.DC}>
-                <View style={styles.container}>
-                    <Text style={styles.txtSett} >Settings</Text>
-                    {Buttons(() => this.props.navigation.navigate('MainScreen'), "home", "Return to HomeScreen")}
-                    {Buttons(null, "flare", "Geolocation")}
-                    {Buttons(null, "home", "Return to HomeScreen")}
-                    {Buttons(null, "add-location", "Temperature")}
-                    {Buttons(null, "lock", "Lock")}
-                    {Buttons(null, "notifications", "Notifications")}
-                    {Buttons(null, "airplay", "Background")}
-                    {Buttons(null, "map", "Weather-Map")}
-                    {Buttons(null, "widgets", "Widgets")}
-                    {Buttons(null, "contact-mail", "Tell about problem")}
-                    {Buttons(null, "message", "Contact us")}
-                    {Buttons(() => this.props.navigation.navigate('LoginScreen'), "all-out", "Log Out")}
-                </View>
-            </View >
-        )
-    }
+const DrawerContent = ({ navigation }) => {
+    return (
+        <View style={styles.drawerContent}>
+            <View style={styles.container}>
+                <Text style={styles.txtSett} >{texts.SETTINGS}</Text>
+                {
+                    items.map(({ onPress, iconName, title }) => {
+                        return (
+                            <TouchableOpacity style={styles.touch} onPress={() => onPress(navigation)}>
+                                <Icon name={iconName} size={25} color={colors.emerald} />
+                                <Text style={styles.txt}>{title}</Text>
+                            </TouchableOpacity>
+                        )
+                    })
+                }
+            </View>
+        </View >
+    )
 }
+
+export default DrawerContent

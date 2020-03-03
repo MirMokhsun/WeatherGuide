@@ -41,6 +41,7 @@ export const styles = StyleSheet.create({
     },
     logBut:
     {
+        flex: 1,
         width: "30%",
         height: 40,
         justifyContent: 'center',

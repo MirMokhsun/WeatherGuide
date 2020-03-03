@@ -1,36 +1,36 @@
-import React, { Component } from 'react';
-import { Dimensions, Animated } from 'react-native';
+import React from 'react';
+import { Animated } from 'react-native';
+import images from '../../services/constans/images'
 
-const screenWidth = Math.round(Dimensions.get('window').width);
+export default function Loader() {
+    const opacity = new Animated.Value(0);
 
-export default class Loader extends Component {
-    state = {
-        opacity: new Animated.Value(0),
-    }
-    onLoad = () => {
-        Animated.timing(this.state.opacity, { toValue: 1, duration: 1000, }).start();
-    }
-    render() {
-        return (
-            <Animated.Image
-                onLoad={this.onLoad}
-                {...this.props}
-                style={[
-                    {
-                        width: screenWidth,
-                        height: screenWidth,
-                        opacity: this.state.opacity,
-                        transform: [
-                            {
-                                scale: this.state.opacity.interpolate({
-                                    inputRange: [0, 1],
-                                    outputRange: [0.25, 0.75]
-                                })
-                            }
-                        ]
-                    }
-                ]}
-            />
-        )
-    }
+    Animated.timing(opacity, {
+        toValue: 1,
+        duration: 2000
+    }).start();
+
+    return (
+        <Animated.Image
+            style={[
+                {
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    opacity: opacity,
+                    width: 250,
+                    height: 250,
+                    transform: [
+                        {
+                            scale: opacity.interpolate({
+                                inputRange: [0, 1],
+                                outputRange: [1, 1]
+                            })
+                        }
+                    ]
+                }
+            ]
+            }
+            source={images.logo}
+        />
+    )
 }

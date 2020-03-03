@@ -4,10 +4,8 @@ import { styles } from '../style';
 
 export const Buttons = (title, onPress, ) => {
     return (
-        <View>
-            <TouchableOpacity onPress={onPress}>
-                <Text style={styles.txtBut}>{title}</Text>
-            </TouchableOpacity>
-        </View>
+        <TouchableOpacity onPress={onPress}>
+            <Text style={styles.txtBut}>{title}</Text>
+        </TouchableOpacity>
     )
 }

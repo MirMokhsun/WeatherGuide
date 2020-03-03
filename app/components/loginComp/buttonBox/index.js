@@ -2,28 +2,26 @@ import React from 'react';
 import { View, } from 'react-native';
 import { styles } from '../style';
 import { Buttons } from '../buttons'
-
-
+import routs from '../../../services/constans/routs';
+import texts from '../../../services/constans/texts';
 
 
 const ButtonBox = ({ navigation }) => {
     const goTo = () => {
-        console.log('navigation', navigation)
-        navigation.navigate('RegistrScreen')
+        navigation.navigate(routs.RegistrScreen)
     }
 
     const goToTwo = () => {
-        console.log('navigation', navigation)
-        navigation.navigate('App')
+        navigation.navigate(routs.App)
     }
 
     return (
         <View style={styles.btnBox}>
             <View style={styles.regBut}>
-                {Buttons('Go To Registration', goTo)}
+                {Buttons(texts.GO_REG, goTo)}
             </View>
             <View style={styles.appBut}>
-                {Buttons('Go To Appflow', goToTwo)}
+                {Buttons(texts.GO_APP, goToTwo)}
             </View>
         </View>
     )

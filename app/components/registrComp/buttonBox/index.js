@@ -1,19 +1,20 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { styles } from '../style';
+import routs from '../../../services/constans/routs';
+import texts from '../../../services/constans/texts'
+
 
 export default function ButtonBox({ navigation }) {
 
     const CheckLogin = () => {
-        navigation.navigate('LoginScreen')
+        navigation.navigate(routs.LoginScreen)
     }
 
     return (
-        <View style={{ flex: 1, }}>
-            <TouchableOpacity style={styles.logBut} onPress={CheckLogin}>
-                <Text style={styles.txtBut}>Go To Login Page</Text>
-            </TouchableOpacity >
-        </View>
+        <TouchableOpacity style={styles.logBut} onPress={CheckLogin}>
+            <Text style={styles.txtBut}>{texts.GO_LOG}</Text>
+        </TouchableOpacity >
     )
 }
 

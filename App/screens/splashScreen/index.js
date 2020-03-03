@@ -2,25 +2,22 @@ import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import { styles } from './style'
 import Loader from '../../components/loader'
-import images from '../../services/constans/images'
-// import { strings } from '../../i18n/i18n';
+import routs from '../../services/constans/routs'
+import texts from '../../services/constans/texts'
 
 
 export default class SplashScreen extends Component {
     componentDidMount() {
         const { navigation } = this.props;
         setTimeout(() => {
-            navigation.navigate('Auth');
+            navigation.navigate(routs.SettingScreen);
         }, 2000)
     }
     render() {
-        // const {screenProps: {localText}} = this.props;
-        // console.log('localText'){localText('splash.title')}
         return (
             <View style={styles.container}>
-                <Loader
-                    source={images.logo} />
-                <Text style={styles.txt}> Weather Guide</Text>
+                <Loader />
+                <Text style={styles.txt}> {texts.WEATHER_GUIDE}</Text>
             </View>
         )
     }

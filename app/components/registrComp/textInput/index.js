@@ -4,7 +4,7 @@ import colors from '../../../services/constans/colors'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { styles } from '../style';
 
-const textInput = (placeHolder, setUser, iconName, value) => {
+const TextInputReg = (placeHolder, setUser, iconName, value) => {
     return (
         <View style={styles.viewBox1}>
             <View style={styles.txtInView}>
@@ -21,4 +21,4 @@ const textInput = (placeHolder, setUser, iconName, value) => {
     )
 }
 
-export default textInput
+export default TextInputReg

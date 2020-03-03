@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { styles } from '../style';
 
 
-export const textInput = (placeHolder, setUser, iconName, value) => {
+export const TextInputlog = (placeHolder, setUser, iconName, value) => {
     return (
         <View style={styles.txtInView}>
             <TextInput
