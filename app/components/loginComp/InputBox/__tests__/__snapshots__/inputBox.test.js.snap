@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputBox InputBox snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "marginTop": "5%",
+      "position": "relative",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "height": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderColor": "gray",
+          "borderRadius": 25,
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "height": 60,
+          "width": 500,
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Enter your email"
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "fontSize": 16,
+            "height": 60,
+            "paddingLeft": 50,
+            "width": "100%",
+          }
+        }
+        underlineColorAndroid="transparent"
+        value={null}
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "position": "absolute",
+            "width": 60,
+          }
+        }
+      >
+        <Icon
+          allowFontScaling={false}
+          color="rgba(33, 57, 156,0.6)"
+          name="login"
+          size={25}
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 20,
+        "marginTop": 60,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderColor": "gray",
+          "borderRadius": 25,
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "height": 60,
+          "width": 500,
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Enter your password"
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "fontSize": 16,
+            "height": 60,
+            "paddingLeft": 50,
+            "width": "100%",
+          }
+        }
+        underlineColorAndroid="transparent"
+        value={null}
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "position": "absolute",
+            "width": 60,
+          }
+        }
+      >
+        <Icon
+          allowFontScaling={false}
+          color="rgba(33, 57, 156,0.6)"
+          name="textbox-password"
+          size={25}
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

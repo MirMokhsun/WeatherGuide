@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImgBox ImgBox snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "marginTop": 10,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../app/assets/logos/cloudy-1.png",
+      }
+    }
+    style={
+      Object {
+        "marginTop": 10,
+        "maxHeight": 145,
+        "maxWidth": 145,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "fontFamily": "Roboto-Black",
+        "fontSize": 30,
+        "marginTop": 5,
+      }
+    }
+  >
+    Weather Guide
+  </Text>
+</View>
+`;

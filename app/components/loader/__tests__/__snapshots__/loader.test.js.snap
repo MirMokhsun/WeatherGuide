@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader Loader snapshot 1`] = `
+<AnimatedComponent
+  onLoad={[Function]}
+  style={
+    Array [
+      Object {
+        "height": 750,
+        "opacity": 0,
+        "transform": Array [
+          Object {
+            "scale": 0.25,
+          },
+        ],
+        "width": 750,
+      },
+    ]
+  }
+/>
+`;
