@@ -14,11 +14,6 @@ const items = [
     },
     {
         onPress: null,
-        iconName: 'flare',
-        title: texts.RETURN_REG,
-    },
-    {
-        onPress: null,
         iconName: 'add-location',
         title: texts.TEMP,
     },

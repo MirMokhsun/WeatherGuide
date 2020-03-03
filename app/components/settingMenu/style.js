@@ -8,8 +8,13 @@ export const styles = StyleSheet.create({
         height: "65%",
         width: "90%",
         marginTop: 15,
-        marginLeft: 5,
         borderRadius: 3,
-        backgroundColor: colors.halfBlack
+        backgroundColor: colors.halfBlack,
+    },
+    txt:
+    {
+        color: colors.white,
+        fontSize: 20,
+        fontFamily: 'Roboto-Bold'
     },
 })
