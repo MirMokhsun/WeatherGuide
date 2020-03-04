@@ -4,6 +4,8 @@ import { RegistrScreen } from '../screens/registrScreen'
 import DrawerNav from './drawer'
 import navComp from '../services/constans/navComp'
 import MapMe from '../screens/gMap'
+import Locations from '../screens/locationsScreen'
+import LocationFind from '../screens/locationFind'
 
 export const AuthenticationStack = createStackNavigator({
     LoginScreen: { screen: LoginScreen },
@@ -24,6 +26,32 @@ export const Appflow = createStackNavigator(
         {
             screen: MapMe,
 
+        },
+        Locations:
+        {
+            screen: Locations,
+            navigationOptions:
+            {
+                headerStyle: {
+                    backgroundColor: '#273840',
+                    shadowOffset: {
+                        width: 0,
+                        height: 1,
+                    },
+                    shadowOpacity: 0.18,
+                    shadowRadius: 1.00,
+
+                    elevation: 1,
+                },
+            }
+        },
+        LocationFind:
+        {
+            screen: LocationFind,
+            navigationOptions:
+            {
+                header: null
+            }
         }
     }
 )

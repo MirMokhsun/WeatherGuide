@@ -9,7 +9,7 @@ const SecondPage = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <View style={styles.buttStl}>
-                <TouchableOpacity style={styles.touchOpStl} onPress={() => navigation.navigate(routs.Map)}>
+                <TouchableOpacity style={styles.touchOpStl} onPress={() => navigation.navigate(routs.Locations)}>
                     {iconsMaterialComunityIcons.SecondPage}
                     <Text style={styles.txt}>{texts.ADD_LOC}</Text>
                 </TouchableOpacity>
