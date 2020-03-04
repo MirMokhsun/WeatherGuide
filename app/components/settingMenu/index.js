@@ -5,7 +5,15 @@ import Switcher from './switcher'
 import routs from '../../services/constans/routs'
 import texts from '../../services/constans/texts'
 
-
+export const setLine = (iconName, switchText1, switchText2) => {
+    return (
+        < View style={styles.switchCont} >
+            {/* <Icon /> */}
+            < Text style={styles.txt} > {texts.TEMP}</Text>
+            <Switcher title1={switchText1} title2={switchText2} />
+        </View >
+    )
+}
 const SettingBox = ({ navigation }) => {
     return (
         <View style={styles.container}>
@@ -39,8 +47,8 @@ const SettingBox = ({ navigation }) => {
                 <Text style={styles.txt}>{texts.STATUS_PANEL}</Text>
                 <Switcher />
             </View>
-            <View style={{ alignItems: 'center', paddingTop: "5%" }}>
-                <TouchableOpacity onPress={() => navigation.navigate(routs.LoginScreen)} style={{ backgroundColor: 'black', width: "20%", height: "30%", alignItems: 'center', borderRadius: 25 }}>
+            <View style={styles.btnView}>
+                <TouchableOpacity onPress={() => navigation.navigate(routs.LoginScreen)} style={styles.touchStl}>
                     <Text style={styles.btnTxt}>{texts.DONE}</Text>
                 </TouchableOpacity>
             </View>

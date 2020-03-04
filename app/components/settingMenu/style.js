@@ -34,5 +34,17 @@ export const styles = StyleSheet.create({
         color: colors.white,
         fontSize: 20,
         fontFamily: 'Roboto-Bold'
-    }
+    },
+    btnView:
+    {
+        alignItems: 'center',
+        paddingTop: "5%"
+    },
+    touchStl:
+    {
+        backgroundColor: 'black',
+        width: "20%", height: "30%",
+        alignItems: 'center',
+        borderRadius: 25
+    },
 })

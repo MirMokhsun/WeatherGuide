@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, } from 'react-native';
-import { styles } from '../style';
+import { styles } from './style';
 import { Buttons } from '../buttons'
 import routs from '../../../services/constans/routs';
 import texts from '../../../services/constans/texts';

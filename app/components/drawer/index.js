@@ -8,13 +8,13 @@ const items = [
         title: texts.RETURN_REG,
     },
     {
-        onPress: null,
-        iconName: 'flare',
+        onPress: (navigation) => navigation.navigate(routs.Map),
+        iconName: 'add-location',
         title: texts.GEO,
     },
     {
         onPress: null,
-        iconName: 'add-location',
+        iconName: 'flare',
         title: texts.TEMP,
     },
     {

@@ -3,6 +3,7 @@ import { createAppContainer } from 'react-navigation';
 import MainScreen from '../screens/mainScreen';
 import SecondScreen from '../screens/secondScreen';
 import navComp from '../services/constans/navComp'
+import routs from '../services/constans/routs';
 
 const TabNavigator = createMaterialTopTabNavigator(
     {
@@ -16,7 +17,7 @@ const TabNavigator = createMaterialTopTabNavigator(
         },
     },
     {
-        order: ['MainScreen', 'SecondScreen'],
+        order: [routs.MainScreen, routs.SecondScreen],
         tabBarOptions: navComp.TabBarOptions
     }
 );

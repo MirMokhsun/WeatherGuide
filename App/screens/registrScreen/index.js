@@ -4,7 +4,7 @@ import { styles } from './style';
 import ImgBox from '../../components/registrComp/imgBox';
 import InputBox from '../../components/registrComp/inputBox';
 import ButtonBox from '../../components/registrComp/buttonBox';
-// 
+
 export const RegistrScreen = ({ navigation }) => {
 
   return (

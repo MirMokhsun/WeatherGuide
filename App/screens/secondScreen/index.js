@@ -1,16 +1,15 @@
 import React from 'react'
 import { View, TouchableOpacity, Text } from 'react-native'
 import { styles } from './style'
-import colors from '../../services/constans/colors'
 import iconsMaterialComunityIcons from '../../services/constans/icons/iconsMaterialComunityIcons'
 import texts from '../../services/constans/texts'
-
+import routs from '../../services/constans/routs'
 
 const SecondPage = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <View style={styles.buttStl}>
-                <TouchableOpacity style={styles.touchOpStl}>
+                <TouchableOpacity style={styles.touchOpStl} onPress={() => navigation.navigate(routs.Map)}>
                     {iconsMaterialComunityIcons.SecondPage}
                     <Text style={styles.txt}>{texts.ADD_LOC}</Text>
                 </TouchableOpacity>

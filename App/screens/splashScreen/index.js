@@ -7,12 +7,14 @@ import texts from '../../services/constans/texts'
 
 
 export default class SplashScreen extends Component {
+
     componentDidMount() {
         const { navigation } = this.props;
         setTimeout(() => {
             navigation.navigate(routs.SettingScreen);
         }, 2000)
     }
+
     render() {
         return (
             <View style={styles.container}>

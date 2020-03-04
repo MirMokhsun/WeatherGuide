@@ -21,5 +21,5 @@ export default texts = {
     TEXT_IN3: 'Comfrim your password',
     WIND_VEL: 'Wind velocity',
     STATUS_PANEL: 'Status Panel',
-    DONE: 'Done'
+    DONE: 'Done',
 }

@@ -5,5 +5,6 @@ export default ROUTS = {
     LoginScreen: 'LoginScreen',
     MainScreen: 'MainScreen',
     Auth: 'Auth',
-    SettingScreen: 'SettingScreen'
+    SettingScreen: 'SettingScreen',
+    Map: 'Map'
 }

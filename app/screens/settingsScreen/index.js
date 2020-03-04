@@ -13,7 +13,6 @@ const SettingScreen = ({ navigation }) => {
             <SettingBox navigation={navigation} />
         </View>
     );
-
 }
 
 export default SettingScreen

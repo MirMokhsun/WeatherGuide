@@ -14,7 +14,6 @@ const Switcher = ({ title1, title2 }) => {
                 switchWidth={70}
                 switchHeight={30}
                 switchdirection='rtl'
-                switchBorderRadius={10}
                 switchSpeedChange={350}
                 switchBorderColor='#01689F'
                 switchBackgroundColor='#01689F'
@@ -27,4 +26,4 @@ const Switcher = ({ title1, title2 }) => {
     )
 }
 
-export default Switcher
+export default Switcher;
