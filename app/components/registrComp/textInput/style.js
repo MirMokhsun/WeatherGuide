@@ -1,8 +1,13 @@
 import { StyleSheet, Dimensions } from 'react-native'
-import colors from '../../../services/constans/colors'
+
 const width = Math.round(Dimensions.get('window').width);
 
 export const styles = StyleSheet.create({
+    viewBox1:
+    {
+        flex: 0.2,
+        marginTop: 10
+    },
     txtInView:
     {
         flexDirection: 'row',
@@ -17,14 +22,14 @@ export const styles = StyleSheet.create({
         height: 60,
         width: "100%",
         fontSize: 16,
-        paddingLeft: 50
+        paddingLeft: 50,
     },
-    icon:
+    txtIcon:
     {
         width: 60,
         height: '100%',
         position: 'absolute',
         justifyContent: 'center',
-        alignItems: 'center',
-    },
+        alignItems: 'center'
+    }
 })

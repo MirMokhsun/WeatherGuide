@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import { styles } from '../style';
+import { styles } from './style';
 import images from '../../../services/constans/images'
 import texts from '../../../services/constans/texts'
 

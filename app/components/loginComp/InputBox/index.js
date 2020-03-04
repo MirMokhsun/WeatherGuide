@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { styles } from '../style';
+import { styles } from './style';
 import { TextInputlog } from '../textInput'
 import texts from '../../../services/constans/texts';
 

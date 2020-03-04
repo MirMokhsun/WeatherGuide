@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TextInput, } from 'react-native';
 import colors from '../../../services/constans/colors'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { styles } from '../style';
+import { styles } from './style';
 
 const TextInputReg = (placeHolder, setUser, iconName, value) => {
     return (

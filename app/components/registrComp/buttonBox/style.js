@@ -4,34 +4,23 @@ import colors from '../../../services/constans/colors'
 const width = Math.round(Dimensions.get('window').width);
 
 export const styles = StyleSheet.create({
-    btnBox:
+    txtBut:
+    {
+        fontSize: 14,
+        fontFamily: 'Roboto-Bold',
+        color: colors.emerald
+    },
+    logBut:
     {
         flex: 1,
-        marginTop: "20%",
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    regBut:
-    {
         width: "30%",
         height: 40,
-        alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: colors.halfWhite,
-        borderRadius: 35,
-        width: width / 2.5,
-        position: 'relative',
-    },
-    appBut:
-    {
-        width: "30%",
-        height: 40,
         alignItems: 'center',
-        justifyContent: 'center',
         backgroundColor: colors.halfBlack,
         borderRadius: 35,
         width: width / 2.5,
-        marginTop: 16,
         position: 'relative',
-    },
+        marginTop: 10
+    }
 })
