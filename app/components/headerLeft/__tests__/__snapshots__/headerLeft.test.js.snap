@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderLeft HeaderLeft snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "flexDirection": "row",
+      "justifyContent": "flex-start",
+      "marginTop": 4,
+    }
+  }
+>
+  <Icon
+    allowFontScaling={false}
+    color="rgba(33, 57, 156,0.6)"
+    name="menu"
+    size={40}
+    style={
+      Object {
+        "marginHorizontal": 5,
+      }
+    }
+  />
+</TouchableOpacity>
+`;

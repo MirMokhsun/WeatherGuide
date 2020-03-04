@@ -1,7 +1,7 @@
 import 'react-native';
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import SplashScreen from '..';
+import SplashScreen from '../';
 
 describe('SplashScreen', () => {
     test('SplashScreen snapshot', () => {

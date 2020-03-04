@@ -1,7 +1,7 @@
 import 'react-native';
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import LoginScreen from '..';
+import LoginScreen from '../';
 
 describe('LoginScreen', () => {
     test('LoginScreen snapshot', () => {

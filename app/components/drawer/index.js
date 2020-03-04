@@ -1,5 +1,6 @@
 import routs from '../../services/constans/routs'
 import texts from '../../services/constans/texts'
+import SendMail from './email/email'
 
 const items = [
     {
@@ -43,12 +44,12 @@ const items = [
         title: texts.WIDGETS,
     },
     {
-        onPress: null,
+        onPress: () => SendMail(),
         iconName: 'contact-mail',
         title: texts.TELL_US,
     },
     {
-        onPress: null,
+        onPress: () => SendMail(),
         iconName: 'message',
         title: texts.CONTACT,
     },

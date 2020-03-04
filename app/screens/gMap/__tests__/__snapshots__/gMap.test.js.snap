@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapMe MapMe snapshot 1`] = `
+<MapView
+  provider="google"
+  region={
+    Object {
+      "latitude": 40.37842,
+      "latitudeDelta": 10.5,
+      "longitude": 49.8422,
+      "longitudeDelta": 10.5,
+    }
+  }
+  style={
+    Object {
+      "bottom": 0,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <MapMarker
+    coordinate={
+      Object {
+        "latitude": 40.3885775,
+        "longitude": 49.8706103,
+      }
+    }
+    description="Name of our place"
+    stopPropagation={false}
+    title="Тема я тут))"
+  />
+</MapView>
+`;

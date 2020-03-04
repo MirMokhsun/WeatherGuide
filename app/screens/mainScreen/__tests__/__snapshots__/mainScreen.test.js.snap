@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main Main snapshot 1`] = `
-<View
+<ScrollViewMock
   style={
     Object {
       "backgroundColor": "rgba(0,0,0,0.3)",
@@ -9,27 +9,32 @@ exports[`Main Main snapshot 1`] = `
     }
   }
 >
-  <ScrollViewMock
+  <WeatherBox />
+  <View
     style={
       Object {
-        "flex": 1,
+        "backgroundColor": "rgba(0,0,0,0.3)",
+        "borderRadius": 3,
+        "marginLeft": 5,
+        "marginTop": 25,
+        "width": 740,
       }
     }
   >
-    <WeatherBox />
-    <View
-      style={
-        Object {
-          "backgroundColor": "rgba(0,0,0,0.3)",
-          "borderRadius": 3,
-          "flex": 2,
-          "height": 150,
-          "marginLeft": 5,
-          "marginTop": 25,
-          "width": 740,
-        }
+    <WeatherChart />
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(0,0,0,0.3)",
+        "borderRadius": 3,
+        "marginLeft": 5,
+        "marginTop": 25,
+        "width": 740,
       }
-    />
-  </ScrollViewMock>
-</View>
+    }
+  >
+    <WeatherChart />
+  </View>
+</ScrollViewMock>
 `;

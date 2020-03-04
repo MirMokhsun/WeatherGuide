@@ -1,7 +1,7 @@
 import 'react-native';
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import SecondPage from '..';
+import SecondPage from '../';
 
 describe('SecondPage', () => {
     test('SecondPage snapshot', () => {

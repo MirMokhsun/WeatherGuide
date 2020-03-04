@@ -9,28 +9,7 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.halfBlack,
         flex: 1,
     },
-    txt:
-    {
-        marginTop: 5,
-        fontSize: 18,
-        fontFamily: 'Roboto-Black'
-    },
-    VB: {
-        marginTop: 4,
-        flexDirection: 'row',
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
-    },
-    Img:
-    {
-        marginLeft: 10,
-        width: 35,
-        height: 50
-    },
-
     weatherBoxTwo: {
-        flex: 2,
-        height: 150,
         width: screenWidth - 10,
         marginTop: 25,
         marginLeft: 5,

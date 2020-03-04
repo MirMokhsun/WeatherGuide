@@ -22,9 +22,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">78.57% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/14</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -36,16 +36,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">85.71% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/7</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -88,19 +88,15 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -124,35 +120,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
+<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
 import { View, Text, Image } from 'react-native'
 import { styles } from './style'
 import images from '../../services/constans/images'
+import weatherMock from './weatherMock'
 &nbsp;
-// export const wetherMock = {
-//     date: 'fr 2/28/2020',
-// }
 &nbsp;
-const WeatherBox = ({ navi<span class="fstat-no" title="function not covered" >gation, wet</span>herMock }) =&gt; {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
-<span class="cstat-no" title="statement not covered" >    return (</span>
+const WeatherBox = ({ navigation }) =&gt; {
+    return (
         &lt;View style={styles.container}&gt;
             &lt;View style={styles.firstBox}&gt;
                 &lt;View style={styles.dateBox}&gt;
-                    &lt;Text style={styles.txt}&gt; fr 2/28/2020&lt;/Text&gt;
-                    &lt;Text style={styles.txt}&gt;4:12&lt;/Text&gt;
+                    &lt;Text style={styles.txt}&gt;{weatherMock.date}&lt;/Text&gt;
+                    &lt;Text style={styles.txt}&gt;{weatherMock.time}&lt;/Text&gt;
                 &lt;/View&gt;
                 &lt;View style={styles.tempBox}&gt;
-                    &lt;Text style={styles.txt3}&gt;7°c&lt;/Text&gt;
+                    &lt;Text style={styles.txt3}&gt;{weatherMock.temp}&lt;/Text&gt;
                 &lt;/View&gt;
                 &lt;View style={styles.imgBox}&gt;
                     &lt;Image source={images.sun}
                         style={styles.Img} /&gt;
-                    &lt;Text style={styles.txt}&gt;Sunny&lt;/Text&gt;
+                    &lt;Text style={styles.txt}&gt;{weatherMock.weather}&lt;/Text&gt;
                 &lt;/View&gt;
             &lt;/View&gt;
             &lt;View style={styles.lastBox}&gt;
-                &lt;Text style={styles.txt2}&gt;Max: 10° Min: 5°&lt;/Text&gt;
-                &lt;Text style={styles.txt2}&gt;Wind: East East-South 29km/h&lt;/Text&gt;
+                &lt;Text style={styles.txt2}&gt;{weatherMock.maxT} {weatherMock.minT}&lt;/Text&gt;
+                &lt;Text style={styles.txt2}&gt;{weatherMock.wind}&lt;/Text&gt;
             &lt;/View&gt;
         &lt;/View &gt;
     )
@@ -165,7 +159,7 @@ export default WeatherBox</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Mar 02 2020 17:21:30 GMT+0400 (Azerbaijan Standard Time)
+                at Wed Mar 04 2020 19:00:40 GMT+0400 (Azerbaijan Standard Time)
             </div>
         </div>
         <script src="..\..\prettify.js"></script>

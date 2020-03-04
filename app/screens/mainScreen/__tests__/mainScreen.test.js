@@ -1,7 +1,7 @@
 import 'react-native';
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import MainScreen from '..';
+import MainScreen from '../';
 
 describe('Main', () => {
     test('Main snapshot', () => {
