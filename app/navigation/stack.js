@@ -6,12 +6,15 @@ import navComp from '../services/constans/navComp'
 import MapMe from '../screens/gMap'
 import Locations from '../screens/locationsScreen'
 import LocationFind from '../screens/locationFind'
+import colors from '../services/constans/colors'
+import DetailsScreen from '../screens/detailsScreen'
 
 export const AuthenticationStack = createStackNavigator({
     LoginScreen: { screen: LoginScreen },
     RegistrScreen: { screen: RegistrScreen },
 },
     {
+        transparentCard: true,
         headerMode: 'none'
     },
 );
@@ -25,6 +28,9 @@ export const Appflow = createStackNavigator(
         Map:
         {
             screen: MapMe,
+            navigationOptions: {
+                headerBackground: 'transparent'
+            }
 
         },
         Locations:
@@ -33,7 +39,7 @@ export const Appflow = createStackNavigator(
             navigationOptions:
             {
                 headerStyle: {
-                    backgroundColor: '#273840',
+                    backgroundColor: colors.headerDark,
                     shadowOffset: {
                         width: 0,
                         height: 1,
@@ -51,6 +57,24 @@ export const Appflow = createStackNavigator(
             navigationOptions:
             {
                 header: null
+            }
+        },
+        DetailsScreen:
+        {
+            screen: DetailsScreen,
+            navigationOptions:
+            {
+                headerStyle: {
+                    backgroundColor: colors.headerDark,
+                    shadowOffset: {
+                        width: 0,
+                        height: 1,
+                    },
+                    shadowOpacity: 0.18,
+                    shadowRadius: 1.00,
+
+                    elevation: 1,
+                },
             }
         }
     }

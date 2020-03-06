@@ -10,7 +10,7 @@ const MainScreen = ({ navigation }) => {
         <ScrollView style={styles.container}>
             <WeatherBox />
             <View style={styles.weatherBoxTwo}>
-                <WeatherChart />
+                <WeatherChart navigation={navigation} />
             </View>
             <View style={styles.weatherBoxTwo}>
                 <WeatherChart />

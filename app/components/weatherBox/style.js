@@ -18,7 +18,6 @@ export const styles = StyleSheet.create({
         height: 100,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        backgroundColor: colors.emerald2,
         borderRadius: 3,
         marginTop: 5
     },
@@ -32,7 +31,8 @@ export const styles = StyleSheet.create({
     tempBox:
     {
         flex: 1.25,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     imgBox:
     {
@@ -46,7 +46,6 @@ export const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: colors.emerald2,
         borderRadius: 3,
         marginTop: 2
     },

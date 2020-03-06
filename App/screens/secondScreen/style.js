@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     },
     txt:
     {
-        color: colors.Back,
+        color: colors.white,
         fontSize: 25,
         fontFamily: 'Roboto-Black'
     },
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
         marginTop: 15,
         marginLeft: 5,
         borderRadius: 3,
-        backgroundColor: colors.halfWhite
+        backgroundColor: colors.halfBlack
     },
     touchOpStl:
     {

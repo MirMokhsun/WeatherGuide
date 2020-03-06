@@ -3,8 +3,10 @@ import { View, Text, ScrollView, TouchableOpacity } from 'react-native'
 import { StackedAreaChart, XAxis } from 'react-native-svg-charts'
 import * as shape from 'd3-shape'
 import hours from '../../../__mocks__/hours'
+import routs from '../../services/constans/routs'
 
-export default function WeatherChart() {
+export default function WeatherChart({ navigation }) {
+
     const data = [
         {
             apples: 384,
@@ -22,6 +24,18 @@ export default function WeatherChart() {
             apples: 232,
             dates: 40,
         },
+        {
+            apples: 1312,
+            dates: 1234,
+        },
+        {
+            apples: 5432,
+            dates: 123,
+        },
+        {
+            apples: 321,
+            dates: 123,
+        },
     ]
 
     const colors = ['#8800cc', '#eeccff']
@@ -30,7 +44,7 @@ export default function WeatherChart() {
     return (
         <View style={{ flex: 1, backgroundColor: colors.halfBlack }}>
             <View style={{ height: '10%', alignItems: 'flex-end', justifyContent: 'center' }}>
-                <Text style={{ color: 'white', margin: 10 }}>24 Часа спустя</Text>
+                <Text style={{ color: 'white', margin: 10 }}>Weather for 24 hour</Text>
             </View>
             <ScrollView style={{ width: '100%', height: '25%', }} horizontal>
                 {hours.map(() => {
@@ -47,7 +61,7 @@ export default function WeatherChart() {
                     )
                 })}
             </ScrollView>
-            <View style={{ height: '40%', }}>
+            {/* <View style={{ height: '40%', }}>
                 <StackedAreaChart
                     style={{ height: 200, paddingVertical: 10 }}
                     data={data}
@@ -67,9 +81,13 @@ export default function WeatherChart() {
                         formatLabel={(value) => `${value}ºC`}
                     />
                 </StackedAreaChart>
-            </View>
-            <TouchableOpacity style={{ height: '10%', alignItems: 'flex-end', justifyContent: 'center' }}>
-                <Text style={{ margin: 10, color: 'yellow' }}>Подробнее</Text>
+            </View> */}
+            <TouchableOpacity style={{ height: '10%', alignItems: 'flex-end', justifyContent: 'center' }} onPress={() => navigation.navigate(routs.DetailsScreen)}>
+                <Text style={{
+                    color: 'orange',
+                    textDecorationLine: 'underline',
+                    paddingRight: 10
+                }}>Details</Text>
             </TouchableOpacity>
             <View style={{ height: '10%', flexDirection: 'row' }}>
                 <Text style={{ margin: 10, color: 'white' }}>Вероятность дождя</Text>

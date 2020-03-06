@@ -1,19 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Navigation from './app/navigation/navigation'
-import { strings } from './app/i18n/i18n'
+import { ImageBackground, StatusBar, ScrollView, Dimensions } from 'react-native'
+import colors from './app/services/constans/colors'
+export const height = Math.round(Dimensions.get('window').height);
 
 
-// export default function App() {
-
-// import React, { Component } from 'react';
-// import { View, Text } from 'react-native';
-
-export default class App extends Component {
-
-  render() {
-    return (
-      <Navigation screenProps={{localText: strings}}/>
-    )
-  }
+const App = () => {
+  return (
+    <ImageBackground source={require('./app/assets/images/Background2.jpg')} style={{ width: '100%', height: '100%', backgroundColor: colors.darkBlue }}>
+      <StatusBar backgroundColor={colors.darkBlue} barStyle="light-content" />
+      <Navigation />
+    </ImageBackground>
+  )
 }
 
+
+export default App

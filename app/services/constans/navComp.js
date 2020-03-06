@@ -9,7 +9,7 @@ import HeaderLeft from '../../components/headerLeft'
 export default {
     TabBarOptions: {
         style: {
-            backgroundColor: colors.Back,
+            backgroundColor: 'transparent',
             shadowColor: colors.halfWhite,
             shadowOffset: {
                 width: 0,
@@ -23,7 +23,7 @@ export default {
         showIcon: true,
         showLabel: false,
         activeTintColor: colors.emerald,
-        inactiveTintColor: colors.halfWhite,
+        inactiveTintColor: colors.white,
         pressColor: colors.emerald,
         indicatorStyle: {
             padding: 0,
@@ -33,8 +33,11 @@ export default {
     },
     NavOptions: ({ navigation }) => ({
         headerStyle: {
-            backgroundColor: colors.Back,
+            backgroundColor: 'transparent',
             height: 40,
+        },
+        cardStyle: {
+            backgroundColor: 'transparent'
         },
         showIcon: true,
         title: null,
@@ -47,7 +50,7 @@ export default {
         ),
     },
     ContComp: {
-        drawerBackgroundColor: colors.Back,
+        drawerBackgroundColor: colors.emerald,
         showLabel: false,
         contentComponent: ({ navigation }) => <DrawerContent navigation={navigation} />
     }

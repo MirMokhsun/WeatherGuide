@@ -9,7 +9,7 @@ const items = [
         title: texts.RETURN_REG,
     },
     {
-        onPress: (navigation) => navigation.navigate(routs.Map),
+        onPress: (navigation) => navigation.navigate(routs.Locations),
         iconName: 'add-location',
         title: texts.GEO,
     },
@@ -18,38 +18,38 @@ const items = [
         iconName: 'flare',
         title: texts.TEMP,
     },
-    {
-        onPress: null,
-        iconName: 'lock',
-        title: texts.LOCK,
-    },
-    {
-        onPress: null,
-        iconName: 'notifications',
-        title: texts.NOTIFI,
-    },
+    // {
+    //     onPress: null,
+    //     iconName: 'lock',
+    //     title: texts.LOCK,
+    // },
+    // {
+    //     onPress: null,
+    //     iconName: 'notifications',
+    //     title: texts.NOTIFI,
+    // },
     {
         onPress: null,
         iconName: 'airplay',
         title: texts.BACKGROUND,
     },
     {
-        onPress: null,
+        onPress: (navigation) => navigation.navigate(routs.Map),
         iconName: 'map',
         title: texts.WEATHER_MAP,
     },
+    // {
+    //     onPress: null,
+    //     iconName: 'widgets',
+    //     title: texts.WIDGETS,
+    // },
     {
-        onPress: null,
-        iconName: 'widgets',
-        title: texts.WIDGETS,
-    },
-    {
-        onPress: () => SendMail(),
+        onPress: () => SendMail(texts.SUBJ2, texts.SUBJ2_TEXT),
         iconName: 'contact-mail',
         title: texts.TELL_US,
     },
     {
-        onPress: () => SendMail(),
+        onPress: () => SendMail(texts.SUBJ1, texts.SUBJ1_TEXT),
         iconName: 'message',
         title: texts.CONTACT,
     },

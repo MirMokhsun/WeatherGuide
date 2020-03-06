@@ -9,4 +9,5 @@ export default ROUTS = {
     Map: 'Map',
     Locations: 'Locations',
     LocationFind: 'LocationFind',
+    DetailsScreen: 'DetailsScreen'
 }

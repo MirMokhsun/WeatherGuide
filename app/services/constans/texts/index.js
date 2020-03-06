@@ -19,9 +19,15 @@ export default texts = {
     TEXT_IN1: 'Enter your email',
     TEXT_IN2: 'Enter your password',
     TEXT_IN3: 'Comfrim your password',
+    TEXT_IN4: 'Find Location',
     WIND_VEL: 'Wind velocity',
     STATUS_PANEL: 'Status Panel',
     DONE: 'Done',
-    Test_Title: 'What is Lorem Ipsum?',
-    Test_Text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    ADD_LOCS: 'Add Locations',
+    YOUR_LOC: 'Your Location',
+    AUT_BUTT: 'Automatic locate',
+    SUBJ1: 'How we can improve our app?',
+    SUBJ1_TEXT: "Text of your ideas.",
+    SUBJ2: 'Houston we have a problem',
+    SUBJ2_TEXT: "Text of your problem."
 }

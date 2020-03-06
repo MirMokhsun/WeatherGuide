@@ -6,7 +6,6 @@ const screenWidth = Math.round(Dimensions.get('window').width);
 export const styles = StyleSheet.create({
     container:
     {
-        backgroundColor: colors.halfBlack,
         flex: 1,
     },
     weatherBoxTwo: {
