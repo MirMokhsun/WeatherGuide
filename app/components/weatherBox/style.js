@@ -1,72 +1,88 @@
-import { StyleSheet, Dimensions } from 'react-native'
+import { StyleSheet } from 'react-native';
 import colors from '../../services/constans/colors';
 
-const screenWidth = Math.round(Dimensions.get('window').width);
-
-export const styles = StyleSheet.create({
-    container:
-    {
-        height: 160,
-        width: screenWidth - 10,
-        marginTop: 15,
-        marginLeft: 5,
-        borderRadius: 3,
-        backgroundColor: colors.halfBlack
+const styles = StyleSheet.create({
+    cardView: {
+        width: '100%',
+        height: 200,
+        borderRadius: 6,
+        paddingBottom: 5,
+        marginBottom: 6,
+        backgroundColor: colors.halfBlack,
     },
-    firstBox:
-    {
-        height: 100,
+    containerOne: {
+        flex: 0.8,
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        borderRadius: 3,
-        marginTop: 5
     },
-    dateBox:
-    {
+    timeView: {
+        flex: 0.4,
+    },
+    date: {
         flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center'
+        justifyContent: 'flex-end',
+        alignItems: 'center',
     },
-    tempBox:
-    {
-        flex: 1.25,
+    dateText: {
+        fontSize: 18,
+        color: 'white',
+    },
+    time: {
+        flex: 0.7,
         justifyContent: 'center',
         alignItems: 'center',
     },
-    imgBox:
-    {
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center'
+    timeText: {
+        fontSize: 40,
+        color: 'white',
     },
-    lastBox:
-    {
-        flexDirection: 'column',
+    degreView: {
+        flex: 0.3,
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 3,
-        marginTop: 2
     },
-    txt:
-    {
+    degreText: {
+        fontSize: 70,
+        color: 'white',
+    },
+    iconContainer: {
+        flex: 0.2,
+    },
+    iconView: {
+        flex: 1,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+    icon: {
+        width: '80%',
+        height: '80%',
+    },
+    iconTitleView: {
+        flex: 1,
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+    },
+    iconTitle: {
+        fontSize: 15,
+        color: 'white',
+    },
+    containerTwo: {
+        flex: 0.2,
+    },
+    latiudeView: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    windView: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    texts: {
         fontSize: 18,
-        fontFamily: 'Roboto-Black'
+        color: 'white',
     },
-    txt2:
-    {
-        fontSize: 18,
-        fontFamily: 'Roboto'
-    },
-    txt3:
-    {
-        fontSize: 90,
-        fontFamily: 'RobotoThinItalic-pqYK'
-    },
-    Img:
-    {
-        maxHeight: 65,
-        maxWidth: 65
-    },
-})
+
+});
+
+export default styles;
