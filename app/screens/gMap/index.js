@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 import styles from './style'
 
-var myLatLng = { lat: 40.3885775, lng: 49.8706103 };
 
 const MapMe = () => {
 

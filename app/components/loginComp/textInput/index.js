@@ -10,11 +10,12 @@ export const TextInputlog = (placeHolder, setUser, iconName, value) => {
         <View style={styles.txtInView}>
             <TextInput
                 placeholder={placeHolder}
+                placeholderTextColor={colors.white}
                 style={styles.txtIn}
                 onChangeText={pass => setUser(pass)}
                 value={value} />
             <View style={styles.icon}>
-                <Icon name={iconName} size={25} color={colors.emerald} />
+                <Icon name={iconName} size={25} color={colors.black} />
             </View>
         </View>
     )

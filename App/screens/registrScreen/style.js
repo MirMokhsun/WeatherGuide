@@ -17,9 +17,9 @@ export const styles = StyleSheet.create({
     container:
     {
         flex: 1,
-        backgroundColor: colors.halfBlack,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginTop: 10
     },
     InputsView:
     {

@@ -12,15 +12,14 @@ export const styles = StyleSheet.create({
     },
     logBut:
     {
-        flex: 1,
-        width: "30%",
-        height: 40,
+        flex: 0.3,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: colors.halfBlack,
         borderRadius: 35,
         width: width / 2.5,
         position: 'relative',
-        marginTop: 10
+        marginTop: 10,
+        marginBottom: 40
     }
 })

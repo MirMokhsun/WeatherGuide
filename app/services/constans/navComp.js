@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/Entypo';
 import DrawerContent from '../../screens/drawerContent'
 import HeaderRight from '../../components/headerRight'
 import HeaderLeft from '../../components/headerLeft'
+import HeaderTitles from '../../../__mocks__/title'
 
 
 export default {
@@ -40,7 +41,7 @@ export default {
             backgroundColor: 'transparent'
         },
         showIcon: true,
-        title: null,
+        headerTitle: () => < HeaderTitles />,
         headerLeft: () => <HeaderLeft navigation={navigation} />,
         headerRight: () => <HeaderRight navigation={navigation} />
     }),

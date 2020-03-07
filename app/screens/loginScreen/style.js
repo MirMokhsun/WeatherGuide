@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     keyView:
     {
         flex: 1,
-        backgroundColor: 'transparent'
+        backgroundColor: 'red'
     },
     container:
     {

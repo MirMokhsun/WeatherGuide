@@ -1,21 +1,25 @@
-import { createStackNavigator } from 'react-navigation-stack'
-import { LoginScreen } from '../screens/loginScreen'
-import { RegistrScreen } from '../screens/registrScreen'
-import DrawerNav from './drawer'
-import navComp from '../services/constans/navComp'
-import MapMe from '../screens/gMap'
-import Locations from '../screens/locationsScreen'
-import LocationFind from '../screens/locationFind'
-import colors from '../services/constans/colors'
-import DetailsScreen from '../screens/detailsScreen'
+import { createStackNavigator } from 'react-navigation-stack';
+import React from 'react'
+import { LoginScreen } from '../screens/loginScreen';
+import { RegistrScreen } from '../screens/registrScreen';
+import DrawerNav from './drawer';
+import navComp from '../services/constans/navComp';
+import MapMe from '../screens/gMap';
+import Locations from '../screens/locationsScreen';
+import LocationFind from '../screens/locationFind';
+import colors from '../services/constans/colors';
+import DetailsScreen from '../screens/detailsScreen';
+import HeaderTitles from '../../__mocks__/title';
 
 export const AuthenticationStack = createStackNavigator({
     LoginScreen: { screen: LoginScreen },
     RegistrScreen: { screen: RegistrScreen },
 },
     {
-        transparentCard: true,
-        headerMode: 'none'
+        initialRouteName: 'LoginScreen',
+        mode: 'modal',
+        headerMode: 'none',
+        // transparentCard: true,
     },
 );
 
@@ -29,8 +33,8 @@ export const Appflow = createStackNavigator(
         {
             screen: MapMe,
             navigationOptions: {
-                headerBackground: 'transparent'
-            }
+                headerTitle: () => < HeaderTitles />,
+            },
 
         },
         Locations:

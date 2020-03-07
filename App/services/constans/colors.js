@@ -10,5 +10,6 @@ export default {
     Back: '#8c8c8c',
     darkBlue: '#0E374D',
     headerDark: '#273840',
-
+    black: '#000',
+    gray: '#757575'
 }

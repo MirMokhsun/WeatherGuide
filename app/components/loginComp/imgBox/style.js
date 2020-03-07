@@ -8,7 +8,8 @@ export const styles = StyleSheet.create({
     {
         maxHeight: 145,
         maxWidth: 145,
-        marginTop: 10
+        marginTop: 10,
+        paddingTop: 10
     },
     txt:
     {
@@ -18,7 +19,7 @@ export const styles = StyleSheet.create({
     },
     imageBox:
     {
-        flex: 1,
+        flex: 2,
         alignItems: 'center',
         marginTop: 10
     },

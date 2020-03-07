@@ -3,9 +3,8 @@ import { StyleSheet } from 'react-native'
 export const styles = StyleSheet.create({
     imgBox:
     {
-        flex: 1,
+        flex: 1.5,
         alignItems: 'center',
-        marginTop: 30
     },
     img:
     {

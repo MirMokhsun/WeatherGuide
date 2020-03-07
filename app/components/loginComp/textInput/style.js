@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     txtInView:
     {
         flexDirection: 'row',
-        borderColor: 'gray',
+        borderColor: colors.white,
         borderWidth: 2,
         borderRadius: 25,
         height: 60,
@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
     },
     txtIn:
     {
+        color: colors.white,
         height: 60,
         width: "100%",
         fontSize: 16,

@@ -5,11 +5,12 @@ export const styles = StyleSheet.create({
     drawerContent:
     {
         flex: 1,
-        marginHorizontal: 10,
+        backgroundColor: '#2C7EB6',
     },
     container:
     {
         flex: 1,
+        marginHorizontal: 10,
         justifyContent: 'space-around',
         flexDirection: 'column'
     },
@@ -17,6 +18,7 @@ export const styles = StyleSheet.create({
     {
         color: colors.white,
         fontSize: 45,
+        paddingLeft: 10,
         fontFamily: 'Roboto-Bold'
     },
     touch:
