@@ -22,19 +22,19 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     viewTwo: {
-        flex: 0.1,
+        // flex: 0.1,
     },
     box: {
         width: 50,
         flex: 1,
-        marginLeft: 10,
+        marginLeft: 11,
         justifyContent: 'center',
         alignItems: 'center',
     },
     boxTwo: {
         width: 50,
         flex: 1,
-        marginLeft: 10,
+        marginLeft: 11,
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',

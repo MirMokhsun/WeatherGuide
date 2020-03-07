@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, Dimensions } from 'react-native';
 import { LineChart } from 'react-native-chart-kit';
 import { times } from '../timeCounts';
+import colors from '../../../services/constans/colors';
 
 const CharKit = () => {
     const screenWidth = Dimensions.get('window').width;
@@ -11,12 +12,13 @@ const CharKit = () => {
                 bezier
                 height={100}
                 fromZero={true}
+                yAxisInterval={11}
                 withInnerLines={false}
                 withOuterLines={false}
                 withVerticalLabels={false}
                 withHorizontalLabels={false}
                 onDataPointClick={data => alert(data.value)}
-                width={screenWidth * 4 + 70}
+                width={screenWidth * 4 + 35}
                 data={{
                     datasets: [
                         {
@@ -26,11 +28,13 @@ const CharKit = () => {
                 }}
                 chartConfig={{
                     backgroundGradientFromOpacity: 0,
-                    color: () => `orange`,
+                    color: () => colors.halfWhite,
+                    barPercentage: 0.5,
+                    decimalPlaces: 5,
                     propsForDots: {
-                        r: '1',
-                        strokeWidth: '10',
-                        stroke: '#ffa726',
+                        r: '5',
+                        strokeWidth: '2',
+                        stroke: colors.emerald,
                     },
                 }}
             />

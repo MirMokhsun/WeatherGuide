@@ -57,7 +57,7 @@
 // }
 
 import React from 'react';
-import { View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import styles from './style';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { times } from './timeCounts';
