@@ -8,18 +8,18 @@ export const styles = StyleSheet.create({
     {
         fontSize: 14,
         fontFamily: 'Roboto-Bold',
-        color: colors.emerald
+        color: colors.black
     },
     logBut:
     {
-        flex: 0.3,
-        justifyContent: 'center',
+        width: "30%",
+        height: 40,
         alignItems: 'center',
-        backgroundColor: colors.halfBlack,
+        justifyContent: 'center',
+        backgroundColor: colors.white,
         borderRadius: 35,
         width: width / 2.5,
+        marginTop: 50,
         position: 'relative',
-        marginTop: 10,
-        marginBottom: 40
     }
 })

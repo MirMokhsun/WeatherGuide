@@ -61,3 +61,16 @@ const items = [
 ]
 
 export default items
+// function mapStateToProps(state) {
+//     return {
+//         back: state.back,
+//     }
+// }
+
+// function mapDispatchToProps(dispatch) {
+//     return {
+//         number: (id) => dispatch(chacgebg(id)),
+//     }
+// }
+
+// export default connect(mapStateToProps, mapDispatchToProps)(items)

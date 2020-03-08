@@ -39,9 +39,12 @@ export default texts = {
     SUBJ2_TEXT: "Text of your problem.",
     //weatherBox texts
 
-    //weatherChart texts
+    //weatherChartHourly texts
     HEAD_RIGHT: 'In next 24 hours',
     RAIN_PROB: 'Rain probability',
     SNOW_PROB: 'Snow probability',
-    DETAILS: 'Details'
+    DETAILS: 'Details',
+    //weatherChartWeekly texts
+    HEDER_INFO: 'Press to get more info'
+
 }

@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
     },
     txt: {
         fontSize: 45,
-        fontFamily: 'Roboto-Bold'
+        fontFamily: 'Roboto-Bold',
+        color: colors.white
     }
 })

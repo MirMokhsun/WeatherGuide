@@ -1,11 +1,10 @@
 import React from 'react';
-import { View, Text, Dimensions } from 'react-native';
+import { View, } from 'react-native';
 import { LineChart } from 'react-native-chart-kit';
 import { times } from '../timeCounts';
 import colors from '../../../services/constans/colors';
 
 const CharKit = () => {
-    const screenWidth = Dimensions.get('window').width;
     return (
         <View>
             <LineChart
@@ -18,7 +17,7 @@ const CharKit = () => {
                 withVerticalLabels={false}
                 withHorizontalLabels={false}
                 onDataPointClick={data => alert(data.value)}
-                width={screenWidth * 4 + 35}
+                width={1500}
                 data={{
                     datasets: [
                         {

@@ -11,5 +11,7 @@ export default {
     darkBlue: '#0E374D',
     headerDark: '#273840',
     black: '#000',
-    gray: '#757575'
+    gray: '#757575',
+    orange: 'orange',
+    backColor: '#285F97'
 }

@@ -7,14 +7,17 @@ export default {
     weather: 'Clear',
     ///TextView
     precipitation: 'Precipitation',
-    cooling: 'Cooling',
-    cloud: 'Cloud',
+    wind_Cooling: 'Wind cooling: 7',
+    cloud: 'Cloud: 2%',
     moon_phase: 'Phases of the Moon',
     wind_velocity: 'Wind velocity',
-    humid: 'Humidity',
-    dew_point: 'Dew Point',
-    pressure: 'Pressure',
-    index_ultr: 'Ultraviolet index',
+    humid: 'Humidity: 70%',
+    dew_point: 'Dew Point: 4',
+    pressure: 'Pressure: 771 mm Hg',
+    index_ultr: 'Ultraviolet index: 0 (Low)',
     wind_dir: 'Wind direction',
     details: 'Details',
+    sunrise: 'Sunrise: 07:03',
+    sunset: 'Sunset: 18:40',
+
 }

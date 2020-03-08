@@ -4,7 +4,8 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     txtView:
     {
-        flex: 5
+        flex: 5,
+        paddingTop: 10
     },
     txt:
     {

@@ -6,16 +6,17 @@ const width = Math.round(Dimensions.get('window').width);
 export const styles = StyleSheet.create({
     image:
     {
-        maxHeight: 145,
-        maxWidth: 145,
+        maxHeight: 160,
+        maxWidth: 160,
         marginTop: 10,
         paddingTop: 10
     },
     txt:
     {
-        marginTop: 5,
+        paddingTop: 15,
         fontSize: 30,
         fontFamily: 'Roboto-Black',
+        color: colors.white
     },
     imageBox:
     {

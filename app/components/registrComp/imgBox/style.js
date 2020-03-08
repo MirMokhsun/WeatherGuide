@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native'
+import colors from '../../../services/constans/colors'
 
 export const styles = StyleSheet.create({
     imgBox:
@@ -14,8 +15,9 @@ export const styles = StyleSheet.create({
     },
     txt:
     {
-        marginTop: 5,
+        paddingTop: 15,
         fontSize: 30,
         fontFamily: 'Roboto-Black',
+        color: colors.white
     }
 })

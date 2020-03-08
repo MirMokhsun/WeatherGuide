@@ -7,7 +7,7 @@ const ModalTxt = () => {
     return (
         <View style={styles.txtView}>
             <Text style={styles.txt}>{detailMock.precipitation}</Text>
-            <Text style={styles.txt}>{detailMock.cooling}</Text>
+            <Text style={styles.txt}>{detailMock.wind_Cooling}</Text>
             <Text style={styles.txt}>{detailMock.cloud}</Text>
             <Text style={styles.txt}>{detailMock.moon_phase}</Text>
             <Text style={styles.txt}>{detailMock.wind_velocity}</Text>

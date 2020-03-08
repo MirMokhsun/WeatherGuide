@@ -1,0 +1,1214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherChart WeatherChart snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "height": "10%",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "margin": 10,
+        }
+      }
+    >
+      24 Часа спустя
+    </Text>
+  </View>
+  <ScrollViewMock
+    horizontal={true}
+    style={
+      Object {
+        "height": "25%",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "width": 80,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        15:00
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#549",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656984",
+            "height": "40%",
+            "justifyContent": "center",
+            "width": "40%",
+          }
+        }
+      >
+        <Text>
+          Icon
+        </Text>
+      </View>
+    </View>
+  </ScrollViewMock>
+  <View
+    style={
+      Object {
+        "height": "40%",
+      }
+    }
+  >
+    <AreaStack
+      colors={
+        Array [
+          "#8800cc",
+          "#eeccff",
+        ]
+      }
+      contentInset={Object {}}
+      curve={[Function]}
+      data={
+        Array [
+          Object {
+            "apples": 384,
+            "dates": 40,
+          },
+          Object {
+            "apples": 160,
+            "dates": 40,
+          },
+          Object {
+            "apples": 64,
+            "dates": 40,
+          },
+          Object {
+            "apples": 232,
+            "dates": 40,
+          },
+        ]
+      }
+      keys={
+        Array [
+          "apples",
+          "dates",
+        ]
+      }
+      numberOfTicks={10}
+      offset={[Function]}
+      order={[Function]}
+      showGrid={true}
+      strokeWidth={2}
+      style={
+        Object {
+          "height": 200,
+          "paddingVertical": 10,
+        }
+      }
+      svgs={Array []}
+      xAccessor={[Function]}
+      xScale={[Function]}
+    >
+      <XAxis
+        contentInset={
+          Array [
+            Object {
+              "apples": 384,
+              "dates": 40,
+            },
+            Object {
+              "apples": 160,
+              "dates": 40,
+            },
+            Object {
+              "apples": 64,
+              "dates": 40,
+            },
+            Object {
+              "apples": 232,
+              "dates": 40,
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "apples": 384,
+              "dates": 40,
+            },
+            Object {
+              "apples": 160,
+              "dates": 40,
+            },
+            Object {
+              "apples": 64,
+              "dates": 40,
+            },
+            Object {
+              "apples": 232,
+              "dates": 40,
+            },
+          ]
+        }
+        formatLabel={[Function]}
+        numberOfTicks={10}
+        scale={[Function]}
+        spacingInner={0.05}
+        spacingOuter={0.05}
+        svg={
+          Object {
+            "fill": "black",
+            "fontSize": 10,
+          }
+        }
+        xAccessor={[Function]}
+      />
+    </AreaStack>
+  </View>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "height": "10%",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "yellow",
+          "margin": 10,
+        }
+      }
+    >
+      Подробнее
+    </Text>
+  </TouchableOpacity>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": "10%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "margin": 10,
+        }
+      }
+    >
+      Вероятность дождя
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "margin": 10,
+        }
+      }
+    >
+      Вероятность снега
+    </Text>
+  </View>
+</View>
+`;

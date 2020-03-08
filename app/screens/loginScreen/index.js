@@ -4,20 +4,23 @@ import { styles } from './style'
 import ButtonBox from '../../components/loginComp/buttonBox';
 import ImgBox from '../../components/loginComp/imgBox';
 import InputBox from '../../components/loginComp/InputBox';
-export const height = Math.round(Dimensions.get('window').height);
+
+
+const Screenwidth = Math.round(Dimensions.get('window').width);
+const Screenheight = Math.round(Dimensions.get('window').height);
 
 export const LoginScreen = ({ navigation }) => {
   return (
-    <KeyboardAvoidingView style={styles.keyView} behavior="padding" keyboardVerticalOffset="-250" keyboardShouldPersistTaps={'always'}>
-      <ScrollView >
-        <ImageBackground source={require('../../assets/images/Background2.jpg')} style={{ height: height }}>
+    <KeyboardAvoidingView style={styles.keyView} behavior="height" keyboardVerticalOffset="-250" keyboardShouldPersistTaps={'always'}>
+      <ImageBackground source={require('../../assets/images/Background2.jpg')} style={styles.img}>
+        <ScrollView>
           <View style={styles.container}>
             <ImgBox />
             <InputBox />
             <ButtonBox navigation={navigation} />
           </View>
-        </ImageBackground>
-      </ScrollView>
+        </ScrollView>
+      </ImageBackground>
     </KeyboardAvoidingView >
   );
 }
