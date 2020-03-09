@@ -1,6 +1,7 @@
 import React from 'react'
 import { View } from 'react-native'
 import TextTicker from 'react-native-text-ticker'
+import colors from '../app/services/constans/colors'
 
 
 const HeaderTitles = () => {
@@ -9,7 +10,7 @@ const HeaderTitles = () => {
             width: 230,
         }}>
             <TextTicker
-                style={{ fontSize: 20 }}
+                style={{ fontSize: 20, color: colors.white }}
                 duration={10000}
                 loop
                 bounce

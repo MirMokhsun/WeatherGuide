@@ -10,6 +10,7 @@ import LocationFind from '../screens/locationFind';
 import colors from '../services/constans/colors';
 import DetailsScreen from '../screens/detailsScreen';
 import HeaderTitles from '../../__mocks__/title';
+import AdditionalHeaderLeft from '../components/additionalHeaderLeft';
 
 export const AuthenticationStack = createStackNavigator({
     LoginScreen: { screen: LoginScreen },
@@ -19,7 +20,6 @@ export const AuthenticationStack = createStackNavigator({
         initialRouteName: 'LoginScreen',
         mode: 'modal',
         headerMode: 'none',
-        // transparentCard: true,
     },
 );
 
@@ -32,9 +32,13 @@ export const Appflow = createStackNavigator(
         Map:
         {
             screen: MapMe,
-            navigationOptions: {
+            navigationOptions: ({ navigation }) => ({
+                headerStyle: {
+                    backgroundColor: colors.headerDark
+                },
+                headerLeft: () => <AdditionalHeaderLeft navigation={navigation} />,
                 headerTitle: () => < HeaderTitles />,
-            },
+            }),
 
         },
         Locations:
@@ -50,7 +54,6 @@ export const Appflow = createStackNavigator(
                     },
                     shadowOpacity: 0.18,
                     shadowRadius: 1.00,
-
                     elevation: 1,
                 },
             }
@@ -66,20 +69,22 @@ export const Appflow = createStackNavigator(
         DetailsScreen:
         {
             screen: DetailsScreen,
-            navigationOptions:
-            {
-                headerStyle: {
-                    backgroundColor: colors.headerDark,
-                    shadowOffset: {
-                        width: 0,
-                        height: 1,
+            navigationOptions: ({ navigation }) => (
+                {
+                    headerStyle: {
+                        backgroundColor: colors.headerDark,
+                        shadowOffset: {
+                            width: 0,
+                            height: 1,
+                        },
+                        shadowOpacity: 0.18,
+                        shadowRadius: 1.00,
+                        elevation: 1,
                     },
-                    shadowOpacity: 0.18,
-                    shadowRadius: 1.00,
-
-                    elevation: 1,
-                },
-            }
+                    title: 'Details Screen',
+                    headerTintColor: colors.white,
+                    headerLeft: () => <AdditionalHeaderLeft navigation={navigation} />,
+                })
         }
     }
 )
