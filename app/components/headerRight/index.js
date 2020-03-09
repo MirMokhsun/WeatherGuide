@@ -6,7 +6,7 @@ import routs from '../../services/constans/routs'
 
 const HeaderRight = ({ navigation }) => {
     return (
-        <TouchableOpacity style={styles.rightBut} onPress={() => navigation.navigate(routs.SecondScreen)}>
+        <TouchableOpacity style={styles.rightBut} onPress={() => navigation.navigate(routs.GetLocation)}>
             {iconsEntypo.headerRight}
         </TouchableOpacity>
     )
