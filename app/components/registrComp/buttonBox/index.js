@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import {styles} from './style';
 import routs from '../../../services/constans/routs';
 import texts from '../../../services/constans/texts';

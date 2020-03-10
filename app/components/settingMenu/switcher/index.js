@@ -13,14 +13,7 @@ const Switcher = ({title1, title2}) => {
         text2={title2}
         switchWidth={70}
         switchHeight={30}
-        switchdirection="rtl"
-        switchSpeedChange={350}
-        switchBorderColor="#01689F"
-        switchBackgroundColor="#01689F"
-        btnBorderColor="#F7FFFC"
-        btnBackgroundColor="#F7FFFC"
         fontColor="#fff"
-        activeFontColor="#048DDD"
       />
     </View>
   );

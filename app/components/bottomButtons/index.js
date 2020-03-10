@@ -1,17 +1,20 @@
 import React from 'react';
 import {TouchableOpacity, View} from 'react-native';
 import onShare from '../../components/share';
-import Icon from 'react-native-vector-icons/AntDesign';
 import styles from './style';
+import {
+  bottomButLeft,
+  bottomButRight,
+} from '../../services/constans/icons/iconsAntDesign';
 
-const BottomButtons = ({navigation}) => {
+const BottomButtons = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => onShare()}>
-        <Icon name="sharealt" size={30} color="white" />
+        {bottomButLeft}
       </TouchableOpacity>
       <TouchableOpacity onPress={() => onShare()}>
-        <Icon name="staro" size={30} color="white" />
+        {bottomButRight}
       </TouchableOpacity>
     </View>
   );

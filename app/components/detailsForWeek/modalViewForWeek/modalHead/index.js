@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text, TouchableHighlight, Modal} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './style';
 import detailMock from '../../../../../__mocks__/detailMock';
 import iconsFontisto from '../../../../services/constans/icons/iconsFontisto';
