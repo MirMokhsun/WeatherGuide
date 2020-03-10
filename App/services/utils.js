@@ -1,12 +1,10 @@
-import { Dimensions } from 'react-native';
-export const width = Math.round(Dimensions.get('window').width);
-export const height = Math.round(Dimensions.get('window').height);
-
+import {Dimensions} from 'react-native';
+export const width = Dimensions.get('window').width;
+export const height = Dimensions.get('window').height;
 
 export default {
-    size: {
-        height,
-        width,
-    }
-
-}
+  size: {
+    height,
+    width,
+  },
+};

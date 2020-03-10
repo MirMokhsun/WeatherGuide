@@ -1,9 +1,8 @@
-import React from 'react'
-import Navigation from './app/navigation/navigation'
-import { ImageBackground, StatusBar, Dimensions } from 'react-native'
-import colors from './app/services/constans/colors'
+import React from 'react';
+import Navigation from './app/navigation/navigation';
+import { ImageBackground, StatusBar, Dimensions } from 'react-native';
+import colors from './app/services/constans/colors';
 export const height = Math.round(Dimensions.get('window').height);
-
 
 const App = () => {
   return (
@@ -13,6 +12,5 @@ const App = () => {
     </ImageBackground>
   )
 }
-
 
 export default App

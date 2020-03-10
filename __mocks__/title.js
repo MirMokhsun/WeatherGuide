@@ -3,11 +3,11 @@ import { View } from 'react-native'
 import TextTicker from 'react-native-text-ticker'
 import colors from '../app/services/constans/colors'
 
-
 const HeaderTitles = () => {
     return (
         <View style={{
-            width: 230,
+            alignSelf: 'flex-start',
+            width: '75%',
         }}>
             <TextTicker
                 style={{ fontSize: 20, color: colors.white }}
@@ -18,7 +18,7 @@ const HeaderTitles = () => {
                 marqueeDelay={1000}
             >
                 85k Babek Prospekti, Baki, Azerbaijan
-        </TextTicker>
+            </TextTicker>
         </View>
     )
 }

@@ -6,9 +6,8 @@ const screenHeight = Math.round(Dimensions.get('window').height);
 export const styles = StyleSheet.create({
     keyView:
     {
-        backgroundColor: 'red',
-        width: screenWidth,
-        height: screenHeight,
+        flex: 1,
+        backgroundColor: 'brown'
     },
     container:
     {
@@ -19,7 +18,7 @@ export const styles = StyleSheet.create({
     },
     img:
     {
-        width: screenWidth,
-        height: screenHeight,
+        flex: 1,
+        height: screenHeight
     }
 })

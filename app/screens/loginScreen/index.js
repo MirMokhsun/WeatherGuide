@@ -5,22 +5,26 @@ import ButtonBox from '../../components/loginComp/buttonBox';
 import ImgBox from '../../components/loginComp/imgBox';
 import InputBox from '../../components/loginComp/InputBox';
 
+// contentContainerStyle={{ justifyContent: 'center', alignSelf: 'auto' }} onContentSizeChange={(width, height) => {
+//   console.log(width, height);
+//   console.log(Screenwidth, Screenheight);
 
+// }}
 const Screenwidth = Math.round(Dimensions.get('window').width);
 const Screenheight = Math.round(Dimensions.get('window').height);
 
 export const LoginScreen = ({ navigation }) => {
   return (
-    <KeyboardAvoidingView style={styles.keyView} behavior="height" keyboardVerticalOffset="-250" keyboardShouldPersistTaps={'always'}>
-      <ImageBackground source={require('../../assets/images/Background2.jpg')} style={styles.img}>
-        <ScrollView>
+    <KeyboardAvoidingView style={styles.keyView} behavior="padding" keyboardVerticalOffset="-250">
+      <ScrollView  >
+        <ImageBackground source={require('../../assets/images/Background2.jpg')} style={styles.img}>
           <View style={styles.container}>
             <ImgBox />
             <InputBox />
             <ButtonBox navigation={navigation} />
           </View>
-        </ScrollView>
-      </ImageBackground>
+        </ImageBackground>
+      </ScrollView>
     </KeyboardAvoidingView >
   );
 }

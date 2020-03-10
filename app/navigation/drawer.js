@@ -1,13 +1,15 @@
-import { createDrawerNavigator } from 'react-navigation-drawer'
-import { createAppContainer } from 'react-navigation';
+import {createDrawerNavigator} from 'react-navigation-drawer';
+import {createAppContainer} from 'react-navigation';
 import TabNavigator from './tabnavigation';
-import navComp from '../services/constans/navComp'
+import navComp from '../services/constans/navComp';
 
-
-const DrawerNav = createDrawerNavigator({
+const DrawerNav = createDrawerNavigator(
+  {
     DrawerMenu: {
-        screen: TabNavigator,
-    }
-}, navComp.ContComp)
+      screen: TabNavigator,
+    },
+  },
+  navComp.ContComp,
+);
 
-export default createAppContainer(DrawerNav)
+export default createAppContainer(DrawerNav);
