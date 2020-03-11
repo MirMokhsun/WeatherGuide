@@ -1,11 +1,12 @@
+import texts from '../../services/constans/texts';
+
 const weatherMock = {
-  date: 'Fr 2/28/2020',
-  time: '4:12',
-  temp: '7°',
-  weather: 'Cloudy',
-  maxT: 'Max: 10°',
-  minT: 'Min: 5°',
-  wind: 'Wind: East East-South 29km/h',
+  date: texts.dateBox,
+  temp: texts.tempBox,
+  weather: texts.weatherBox,
+  maxT: texts.maxTBox,
+  minT: texts.minTBox,
+  wind: texts.windBox,
 };
 
 export default weatherMock;

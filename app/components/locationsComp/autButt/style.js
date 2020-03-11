@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     paddingTop: 5,
   },
   autTxt: {
-    fontSize: 20,
+    fontSize: 18,
     paddingLeft: 20,
     color: 'white',
     fontFamily: 'Roboto-Black',

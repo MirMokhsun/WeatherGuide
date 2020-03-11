@@ -1,42 +1,44 @@
+import texts from '../../../services/constans/texts';
+
 export const week = [
   {
-    day: 'MON',
+    day: texts.MON,
     iconName: 'cloud',
     iconNameSmall: 'umbrella',
     degree: 15,
   },
   {
-    day: 'TUE',
+    day: texts.TUE,
     iconName: 'sun-o',
     iconNameSmall: 'umbrella',
     degree: 20,
   },
   {
-    day: 'WED',
+    day: texts.WED,
     iconName: 'cloud',
     iconNameSmall: 'umbrella',
     degree: 15,
   },
   {
-    day: 'THU',
+    day: texts.THU,
     iconName: 'sun-o',
     iconNameSmall: 'umbrella',
     degree: 16,
   },
   {
-    day: 'FRI',
+    day: texts.FRI,
     iconName: 'sun-o',
     iconNameSmall: 'umbrella',
     degree: 16,
   },
   {
-    day: 'SAT',
+    day: texts.SAT,
     iconName: 'sun-o',
     iconNameSmall: 'umbrella',
     degree: 14,
   },
   {
-    day: 'SUN',
+    day: texts.SUN,
     iconName: 'sun-o',
     iconNameSmall: 'umbrella',
     degree: 14,

@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
   txt: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 15,
     paddingStart: 10,
   },
 });

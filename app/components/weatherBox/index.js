@@ -6,18 +6,25 @@ import images from '../../services/constans/images';
 
 const WeatherBox = () => {
   const [currentTime, setCurrentTime] = useState(null);
+  const [currentDate, setCurrentDate] = useState(null);
 
-  const date = new Date().getDay();
+  const getCurrentDate = () => {
+    var date = new Date().getDate();
+    var month = new Date().getMonth() + 1;
+    var year = new Date().getFullYear();
+    setCurrentDate(date + '/' + month + '/' + year);
+  };
+
   const getCurrentTime = () => {
     let hour = new Date().getHours();
     let minutes = new Date().getMinutes();
-
     setCurrentTime(hour + ':' + minutes);
   };
 
   useEffect(() => {
     setInterval(() => {
       getCurrentTime();
+      getCurrentDate();
     });
   }, 1000);
 
@@ -26,7 +33,7 @@ const WeatherBox = () => {
       <View style={styles.containerOne}>
         <View style={styles.timeView}>
           <View style={styles.date}>
-            <Text style={styles.dateText}>{weatherMock.date}</Text>
+            <Text style={styles.dateText}>{currentDate}</Text>
           </View>
           <View style={styles.time}>
             <Text style={styles.timeText}>{currentTime}</Text>

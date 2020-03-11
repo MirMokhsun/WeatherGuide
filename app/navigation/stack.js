@@ -12,6 +12,7 @@ import DetailsScreen from '../screens/detailsScreen';
 import HeaderTitles from '../../__mocks__/title';
 import AdditionalHeaderLeft from '../components/additionalHeaderLeft';
 import GetLocation from '../components/geolocation';
+import texts from '../services/constans/texts';
 
 export const AuthenticationStack = createStackNavigator(
   {
@@ -59,6 +60,7 @@ export const Appflow = createStackNavigator({
         shadowRadius: 1.0,
         elevation: 1,
       },
+      title: texts.LocationScreen,
       headerTintColor: colors.white,
       headerLeft: () => <AdditionalHeaderLeft navigation={navigation} />,
     }),
@@ -74,6 +76,8 @@ export const Appflow = createStackNavigator({
     navigationOptions: ({navigation}) => ({
       headerStyle: {
         backgroundColor: colors.headerDark,
+        justifyContent: 'center',
+        alignSelf: 'center',
         shadowOffset: {
           width: 0,
           height: 1,
@@ -82,7 +86,7 @@ export const Appflow = createStackNavigator({
         shadowRadius: 1.0,
         elevation: 1,
       },
-      title: 'Details Screen',
+      title: texts.DetailScreen,
       headerTintColor: colors.white,
       headerLeft: () => <AdditionalHeaderLeft navigation={navigation} />,
     }),
@@ -117,11 +121,13 @@ export const Appflow = createStackNavigator({
           width: 0,
           height: 1,
         },
+        justifyContent: 'center',
+        alignSelf: 'center',
         shadowOpacity: 0.18,
         shadowRadius: 1.0,
         elevation: 1,
       },
-      title: 'Show your Coordinates',
+      title: texts.GetLocation,
       headerTintColor: colors.white,
       headerLeft: () => <AdditionalHeaderLeft navigation={navigation} />,
     }),

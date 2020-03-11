@@ -19,12 +19,12 @@ const SettingBox = ({navigation}) => {
     <View style={styles.container}>
       <View style={styles.switchCont}>
         {/* <Icon /> */}
-        <Text style={styles.txt}>{texts.TEMP}</Text>
+        <Text style={styles.txt}>{texts.TEMPER}</Text>
         <Switcher title1="F" title2="C" />
       </View>
       <View style={styles.switchCont}>
         {/* <Icon /> */}
-        <Text style={styles.txt}>Time Format</Text>
+        <Text style={styles.txt}>{texts.Time_Format}</Text>
         <Switcher title1="24" title2="12" />
       </View>
       <View style={styles.switchCont}>

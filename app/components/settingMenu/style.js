@@ -31,6 +31,8 @@ export const styles = StyleSheet.create({
     fontFamily: 'Roboto-Bold',
   },
   btnView: {
+    height: 120,
+    width: 350,
     alignItems: 'center',
     paddingTop: '5%',
   },

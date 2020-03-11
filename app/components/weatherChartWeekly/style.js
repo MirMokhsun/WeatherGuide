@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   hours: {
-    fontSize: 18,
+    fontSize: 14,
+    textAlign: 'center',
     color: 'white',
   },
   viewTwo: {

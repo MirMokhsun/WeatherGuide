@@ -16,7 +16,7 @@ const items = [
   {
     onPress: null,
     iconName: 'flare',
-    title: texts.TEMP,
+    title: texts.TEMPER,
   },
   // {
   //     onPress: null,
