@@ -10,3 +10,4 @@ const CheckLogin = async () => {
     alert('Username or Password is incorrect');
   }
 };
+export default CheckLogin;

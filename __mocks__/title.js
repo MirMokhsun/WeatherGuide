@@ -7,7 +7,6 @@ const HeaderTitles = () => {
   return (
     <View
       style={{
-        alignSelf: 'flex-start',
         width: '75%',
       }}>
       <TextTicker

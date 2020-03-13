@@ -5,12 +5,13 @@
 <head>
     <title>Code coverage report for screens/drawerContent/index.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="..\..\prettify.css" />
-    <link rel="stylesheet" href="..\..\base.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(..\..\sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -18,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="..\..\index.html">All files</a> / <a href="index.html">screens/drawerContent</a> index.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">screens/drawerContent</a> index.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -84,7 +85,10 @@
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -98,8 +102,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -111,53 +118,56 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
-import { Text, View<span class="cstat-no" title="statement not covered" >, TouchableOpacity } fro</span>m 'react-native'
-import { styl<span class="cstat-no" title="statement not covered" >es } from './style'</span>
-import texts <span class="cstat-no" title="statement not covered" >from '../../services/constans/texts'</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
+import {Text, View,<span class="cstat-no" title="statement not covered" > TouchableOpacity} from </span>'react-native';
+import {style<span class="cstat-no" title="statement not covered" >s} from './style';</span>
+import texts <span class="cstat-no" title="statement not covered" >from '../../services/constans/texts';</span>
 import Icon from 'rea<span class="cstat-no" title="statement not covered" >ct-native-vector-icons/MaterialIcons';</span>
-import colors <span class="cstat-no" title="statement not covered" >from '../../services/constans/colors'</span>
-import items f<span class="cstat-no" title="statement not covered" >rom '../../components/drawer'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+import colors <span class="cstat-no" title="statement not covered" >from '../../services/constans/colors';</span>
+import items f<span class="cstat-no" title="statement not covered" >rom '../../components/drawer';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
 &nbsp;
-const DrawerContent <span class="cstat-no" title="statement not covered" >= ({ navi<span class="fstat-no" title="function not covered" >gation }) =&gt; {<span class="cstat-no" title="statement not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" >    return (</span>
-        &lt;View style={styles.drawerContent}&gt;
-            &lt;View style={styles.container}&gt;
-                &lt;Text style={styles.txtSett} &gt;{texts.SETTINGS}&lt;/Text&gt;
-                {
-                    item<span class="fstat-no" title="function not covered" >s.</span>map(({ onPress, iconName, titl<span class="cstat-no" title="statement not covered" >e }) =&gt; {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" >                        return (</span>
-                            &lt;TouchableOpacity style={styles.touch} onPress={(onPress ? () =&gt; onPress(navigation) : nu<span class="fstat-no" title="function not covered" >ll</span>)}&gt;<span class="cstat-no" title="statement not covered" ></span>
-                                &lt;Icon name={iconName} size={25} color={colors.emerald} /&gt;
-                                &lt;Text style={styles.txt}&gt;{title}&lt;/Text&gt;
-                            &lt;/TouchableOpacity&gt;
-                        )
-                    })
-                }
-            &lt;/View&gt;
-        &lt;/View &gt;
-    )
-}
+const DrawerContent <span class="cstat-no" title="statement not covered" >= ({navig<span class="fstat-no" title="function not covered" >ation}) =&gt; {<span class="cstat-no" title="statement not covered" ></span></span></span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;View style={styles.drawerContent}&gt;
+      &lt;View style={{width: '100%', backgroundColor: '#3598DC'}}&gt;
+        &lt;Text style={styles.txtSett}&gt;{texts.SETTINGS}&lt;/Text&gt;
+      &lt;/View&gt;
+      &lt;View style={styles.container}&gt;
+        {items.map(({onP<span class="fstat-no" title="function not covered" >re</span>ss, iconName, title}) =&gt; {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
+<span class="cstat-no" title="statement not covered" >          return (</span>
+            &lt;TouchableOpacity
+              style={styles.touch}
+              onPress={onPres<span class="fstat-no" title="function not covered" >s </span>? () =&gt; onP<span class="cstat-no" title="statement not covered" >ress(navigation) : null}&gt;</span>
+              &lt;Icon name={iconName} size={25} color={colors.emerald} /&gt;
+              &lt;Text style={styles.txt}&gt;{title}&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt;
+          );
+        })}
+      &lt;/View&gt;
+    &lt;/View&gt;
+  );
+};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >export default<span class="cstat-no" title="statement not covered" ></span> DrawerContent</span></pre></td></tr></table></pre>
+<span class="cstat-no" title="statement not covered" >export default<span class="cstat-no" title="statement not covered" ></span> DrawerContent;</span>
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Mar 04 2020 19:00:40 GMT+0400 (Azerbaijan Standard Time)
+                at Fri Mar 13 2020 18:17:28 GMT+0400 (Azerbaijan Standard Time)
             </div>
         </div>
-        <script src="..\..\prettify.js"></script>
+        <script src="../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="..\..\sorter.js"></script>
-        <script src="..\..\block-navigation.js"></script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
     </body>
 </html>
     

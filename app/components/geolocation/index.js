@@ -79,6 +79,14 @@ export default class GetLocation extends Component<{}> {
     });
   };
 
+  // watchPosition = async ( ) => {
+  // 	await Geolocation.getCurrentPosition(
+  // 		(position) => { store.dispatch( getDataWeather(position.coords.latitude,position.coords.longitude)); },
+  // 		(error) => {console.log(error)},
+  // 		{enableHighAccuracy: true, timeout: 10000, maximumAge: 3000}
+  // 	);
+  //   }
+
   getLocationUpdates = async () => {
     const hasLocationPermission = await this.hasLocationPermission();
 
@@ -88,7 +96,7 @@ export default class GetLocation extends Component<{}> {
       this.watchId = Geolocation.watchPosition(
         position => {
           this.setState({location: position});
-          console.log(position);
+          console.log(position, location);
         },
         error => {
           this.setState({location: error});
@@ -103,7 +111,9 @@ export default class GetLocation extends Component<{}> {
       );
     });
   };
+  // getLong=()=>{
 
+  // }
   removeLocationUpdates = () => {
     if (this.watchId !== null) {
       Geolocation.clearWatch(this.watchId);

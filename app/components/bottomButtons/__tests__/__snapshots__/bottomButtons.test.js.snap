@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomButtons BottomButtons snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "height": 40,
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    onPress={[Function]}
+  >
+    <Icon
+      allowFontScaling={false}
+      color="white"
+      name="sharealt"
+      size={30}
+    />
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    onPress={[Function]}
+  >
+    <Icon
+      allowFontScaling={false}
+      color="white"
+      name="staro"
+      size={30}
+    />
+  </TouchableOpacity>
+</View>
+`;

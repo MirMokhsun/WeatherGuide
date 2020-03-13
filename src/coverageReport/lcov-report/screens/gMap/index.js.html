@@ -5,12 +5,13 @@
 <head>
     <title>Code coverage report for screens/gMap/index.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="..\..\prettify.css" />
-    <link rel="stylesheet" href="..\..\base.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(..\..\sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -18,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="..\..\index.html">All files</a> / <a href="index.html">screens/gMap</a> index.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">screens/gMap</a> index.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">86.49% </span>
+                <span class="strong">36.11% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>32/37</span>
+                <span class='fraction'>13/36</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">71.88% </span>
+                <span class="strong">21.88% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>23/32</span>
+                <span class='fraction'>7/32</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/5</span>
+                <span class='fraction'>3/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -54,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -89,21 +90,11 @@
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a>
-<a name='L41'></a><a href='#L41'>41</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -131,69 +122,58 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState } from 'react';
-import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
-import styles from './style'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="missing-if-branch" title="else path not taken" >E</span><span class="missing-if-branch" title="if path not taken" >I</span><span class="branch-1 cbranch-no" title="branch not covered" ><span class="missing-if-branch" title="else path not taken" >E</span><span class="missing-if-branch" title="if path not taken" >I</span><span class="branch-2 cbranch-no" title="branch not covered" ><span class="missing-if-branch" title="if path not taken" >I</span><span class="missing-if-branch" title="if path not taken" >I</span><span class="branch-1 cbranch-no" title="branch not covered" ></span></span></span></span></span></span></span></span></span>
-&nbsp;
-var myLatLng = { lat: 40.3885775, lng: 49.8706103 };
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
+import styles from './style';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="missing-if-branch" title="else path not taken" >E</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
 &nbsp;
 const MapMe = () =&gt; {
-&nbsp;
-    return (
-        &lt;MapView
-            provider={PROVIDER_GOOGLE}
-            style={styles.map}
-            region={{
-                latitude: 40.378420,
-                longitude: 49.842200,
-                latitudeDelta: 10.5,
-                longitudeDelta: 10.5,
-            }}
-&nbsp;
-        &gt;
-            &lt;MapView.Marker
-                coordinate=
-                {{
-                    latitude: 40.3885775,
-                    longitude: 49.8706103,
-&nbsp;
-                }}
-                title={"Тема я тут))"}
-                description={"Name of our place"}
-            /&gt;
-            {/* &lt;Marker
+  return (
+    &lt;MapView
+      provider={PROVIDER_GOOGLE}
+      style={styles.map}
+      region={{
+        latitude: 40.37842,
+        longitude: 49.8422,
+        latitudeDelta: 10.5,
+        longitudeDelta: 10.5,
+      }}&gt;
+      &lt;MapView.Marker
+        coordinate={{
+          latitude: 40.3885775,
+          longitude: 49.8706103,
+        }}
+        title={'Тема я тут))'}
+        description={'Name of our place'}
+      /&gt;
+      {/* &lt;Marker
                 draggable
                     coordinate={}
                     title={"Тема я тут))"}
                     description={"Name of pur place"}
                 /&gt; */}
-        &lt;/MapView&gt;
-    );
-&nbsp;
-}
-export default MapMe</pre></td></tr></table></pre>
+    &lt;/MapView&gt;
+  );
+};
+export default MapMe;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Mar 04 2020 19:00:40 GMT+0400 (Azerbaijan Standard Time)
+                at Fri Mar 13 2020 18:17:28 GMT+0400 (Azerbaijan Standard Time)
             </div>
         </div>
-        <script src="..\..\prettify.js"></script>
+        <script src="../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="..\..\sorter.js"></script>
-        <script src="..\..\block-navigation.js"></script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
     </body>
 </html>
     
