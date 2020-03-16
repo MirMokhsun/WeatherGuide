@@ -14,4 +14,6 @@ export default {
   gray: '#757575',
   orange: 'orange',
   backColor: '#285F97',
+  drawerContentColor: '#2C7EB6',
+  drawerHeaderColor: '#3598DC',
 };

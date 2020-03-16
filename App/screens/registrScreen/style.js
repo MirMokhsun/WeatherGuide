@@ -7,10 +7,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'transparent',
   },
-  scView: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   container: {
     flex: 1,
     alignItems: 'center',
@@ -19,5 +15,8 @@ export const styles = StyleSheet.create({
   },
   img: {
     height: Height,
+  },
+  scrool: {
+    flex: 1,
   },
 });

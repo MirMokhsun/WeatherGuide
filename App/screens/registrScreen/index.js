@@ -9,6 +9,7 @@ import {styles} from './style';
 import ImgBox from '../../components/registrComp/imgBox';
 import InputBox from '../../components/registrComp/inputBox';
 import ButtonBox from '../../components/registrComp/buttonBox';
+import constans from '../../services/constans/images';
 
 export const RegistrScreen = ({navigation}) => {
   return (
@@ -17,10 +18,8 @@ export const RegistrScreen = ({navigation}) => {
       behavior="padding"
       keyboardVerticalOffset="-250"
       keyboardShouldPersistTaps={'always'}>
-      <ImageBackground
-        source={require('../../assets/images/Background2.jpg')}
-        style={styles.img}>
-        <ScrollView style={{flex: 1}}>
+      <ImageBackground source={constans.background2} style={styles.img}>
+        <ScrollView style={styles.scrool}>
           <View style={styles.container}>
             <ImgBox />
             <InputBox />

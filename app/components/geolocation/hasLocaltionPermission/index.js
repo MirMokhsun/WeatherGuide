@@ -1,6 +1,6 @@
 import {PermissionsAndroid, Platform, ToastAndroid} from 'react-native';
 
-const GetPermissions = async () => {
+const hasLocationPermission = async () => {
   if (
     Platform.OS === 'ios' ||
     (Platform.OS === 'android' && Platform.Version < 23)
@@ -31,4 +31,4 @@ const GetPermissions = async () => {
   return false;
 };
 
-export default GetPermissions;
+export default hasLocationPermission;

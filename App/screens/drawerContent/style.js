@@ -1,10 +1,14 @@
-import {StyleSheet, Dimensions} from 'react-native';
+import {StyleSheet} from 'react-native';
 import colors from '../../services/constans/colors';
 
 export const styles = StyleSheet.create({
   drawerContent: {
     flex: 1,
-    backgroundColor: '#2C7EB6',
+    backgroundColor: colors.drawerContentColor,
+  },
+  header: {
+    width: '100%',
+    backgroundColor: colors.drawerHeaderColor,
   },
   container: {
     flex: 1,

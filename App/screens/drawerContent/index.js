@@ -9,7 +9,7 @@ import items from '../../components/drawer';
 const DrawerContent = ({navigation}) => {
   return (
     <View style={styles.drawerContent}>
-      <View style={{width: '100%', backgroundColor: '#3598DC'}}>
+      <View style={styles.header}>
         <Text style={styles.txtSett}>{texts.SETTINGS}</Text>
       </View>
       <View style={styles.container}>

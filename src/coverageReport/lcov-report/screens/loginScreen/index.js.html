@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>0/15</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
@@ -88,19 +88,16 @@
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -118,29 +115,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
-import { View, Keyb<span class="cstat-no" title="statement not covered" >oardAvoidingView, Scroll</span>View, ImageBackground, Dimensions } from 'react-native';
-import { styl<span class="cstat-no" title="statement not covered" >es } from './style'</span>
+import {<span class="cstat-no" title="statement not covered" ></span>
+  View,
+  KeyboardAvoidingView,
+  ScrollView,
+  ImageBackground,
+} from 'react-native';
+import {style<span class="cstat-no" title="statement not covered" >s} from './style';</span>
 import ButtonBox <span class="cstat-no" title="statement not covered" >from '../../components/loginComp/buttonBox';</span>
 import ImgBox <span class="cstat-no" title="statement not covered" >from '../../components/loginComp/imgBox';</span>
-import InputBox <span class="cstat-no" title="statement not covered" >from '../../components/loginComp/InputBox';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+import InputBox <span class="cstat-no" title="statement not covered" >from '../../components/loginComp/InputBox';</span>
+import constan<span class="cstat-no" title="statement not covered" >s from '../../services/constans/images';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
 &nbsp;
-// contentContainerStyle={{ justifyContent: 'center', alignSelf: 'auto' }} onContentSizeChange={(width, height) =&gt; {
-//   console.log(width, height);
-//   console.log(Screenwidth, Screenheight);
-&nbsp;
-// }}
-const Screenwidth <span class="cstat-no" title="statement not covered" >= Math.round(Dimensions.get('window').width);</span>
-const Screenheight <span class="cstat-no" title="statement not covered" >= Math.round(Dimensions.get('window').height);</span>
-&nbsp;
-export const Login<span class="cstat-no" title="statement not covered" >Screen = <span class="fstat-no" title="function not covered" >({ navigatio</span>n }) =&gt; {<span class="cstat-no" title="statement not covered" ></span></span>
+export const Login<span class="cstat-no" title="statement not covered" >Screen = <span class="fstat-no" title="function not covered" >({navigation</span>}) =&gt; {<span class="cstat-no" title="statement not covered" ></span></span>
 <span class="cstat-no" title="statement not covered" >  return (</span>
-    &lt;KeyboardAvoidingView style={styles.keyView} behavior="padding" keyboardVerticalOffset="-250"&gt;
-      &lt;ScrollView  &gt;
-        &lt;ImageBackground source={require('../../assets/images/Background2.jpg')} style={styles.img}&gt;
+    &lt;KeyboardAvoidingView
+      style={styles.keyView}
+      behavior="padding"
+      keyboardVerticalOffset="-250"&gt;
+      &lt;ScrollView&gt;
+        &lt;ImageBackground source={constans.background2} style={styles.img}&gt;
           &lt;View style={styles.container}&gt;
             &lt;ImgBox /&gt;
             &lt;InputBox /&gt;
@@ -148,11 +147,9 @@ export const Login<span class="cstat-no" title="statement not covered" >Screen =
           &lt;/View&gt;
         &lt;/ImageBackground&gt;
       &lt;/ScrollView&gt;
-    &lt;/KeyboardAvoidingView &gt;
+    &lt;/KeyboardAvoidingView&gt;
   );
-}<span class="cstat-no" title="statement not covered" ></span>
-&nbsp;
-&nbsp;
+};<span class="cstat-no" title="statement not covered" ></span>
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -160,7 +157,7 @@ export const Login<span class="cstat-no" title="statement not covered" >Screen =
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Mar 13 2020 18:17:28 GMT+0400 (Azerbaijan Standard Time)
+                at Mon Mar 16 2020 13:08:25 GMT+0400 (Azerbaijan Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

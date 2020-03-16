@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundImage BackgroundImage snapshot 1`] = `
+<ImageBackground
+  source={
+    Object {
+      "testUri": "../../../app/assets/images/Background2.jpg",
+    }
+  }
+  style={
+    Object {
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+/>
+`;

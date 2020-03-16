@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import {times} from './timeCounts';
 import Icon1 from 'react-native-vector-icons/FontAwesome5';
 import CharKit from './charKit';
-import routs from '../../services/constans/routs';
+import ROUTS from '../../services/constans/routs';
 import texts from '../../services/constans/texts';
 import TextVies from '../../../__mocks__/bottomTV';
 
@@ -69,7 +69,7 @@ const WeatherChart = ({navigation}) => {
         })}
         <TouchableOpacity
           style={styles.rowThree}
-          onPress={() => navigation.navigate(routs.DetailsScreen)}>
+          onPress={() => navigation.navigate(ROUTS.DetailsScreen)}>
           <Text style={styles.more}>{texts.DETAILS}</Text>
         </TouchableOpacity>
       </View>

@@ -121,8 +121,6 @@ export const Appflow = createStackNavigator({
           width: 0,
           height: 1,
         },
-        justifyContent: 'center',
-        alignSelf: 'center',
         shadowOpacity: 0.18,
         shadowRadius: 1.0,
         elevation: 1,

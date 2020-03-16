@@ -1,24 +1,17 @@
 import React from 'react';
 import {ImageBackground} from 'react-native';
-import colors from '../../services/constans/colors';
+import constans from '../../services/constans/images';
+import {styles} from './styles';
 
 export default function BackgroundImage({background}) {
   if ((background = true))
     return (
       <ImageBackground
-        source={require('./app/assets/images/Background2.jpg')}
-        style={{width: '100%', height: '100%'}}
+        source={constans.background2}
+        style={styles.firstStyle}
       />
     );
   else {
-    return (
-      <ImageBackground
-        style={{
-          width: '100%',
-          height: '100%',
-          backgroundColor: colors.darkBlue,
-        }}
-      />
-    );
+    return <ImageBackground style={styles.secondStyle} />;
   }
 }
