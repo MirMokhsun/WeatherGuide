@@ -1,13 +1,18 @@
 import React, {useState, useEffect} from 'react';
-import {Button, Text, View} from 'react-native';
+import {Text, View, TouchableOpacity} from 'react-native';
 import Geolocation from 'react-native-geolocation-service';
 import styles from './style';
 import hasLocationPermission from './hasLocaltionPermission';
+import {connect} from 'react-redux';
+import {getLoc, loadLoc} from '../../redux/actions';
+import {useDispatch} from 'react-redux';
 
-const GetLocation = () => {
-  const [latitude, setLatittude] = useState();
-  const [longitude, setLongitude] = useState();
+const GetLocation = ({getLoc}) => {
+  const [latitude, setLatittude] = useState('');
+  const [longitude, setLongitude] = useState('');
   const [data, setData] = useState({});
+  const dispatch = useDispatch();
+  const onClick = () => dispatch(loadLoc());
 
   const getLocation = async () => {
     const hasLocatPermis = await hasLocationPermission();
@@ -16,6 +21,7 @@ const GetLocation = () => {
       position => {
         setLatittude(position.coords.latitude);
         setLongitude(position.coords.longitude);
+        getLoc(position.coords.longitude, position.coords.latitude);
       },
       error => {
         console.log(error.code, error.message);
@@ -28,26 +34,28 @@ const GetLocation = () => {
     );
   };
 
-  const getData = () => {
-    fetch(
+  const getData = (latitude, longitude) => {
+    const url =
       'https://openweathermap.org/data/2.5/weather?lat=' +
-        {longitude} +
-        '&lon=' +
-        {latitude} +
-        '&units=metric&appid=b6907d289e10d714a6e88b30761fae22',
-    )
+      latitude +
+      '&lon=' +
+      longitude +
+      '&units=metric&appid=b6907d289e10d714a6e88b30761fae22';
+    fetch(url)
       .then(response => response.json())
-      .then(
-        responseJson => setData(responseJson),
-        console.log('/////////////////////////////', data),
-      );
+      .then(responseJson => setData(responseJson));
   };
 
   useEffect(() => {
     getLocation();
-    getData();
   }, []);
 
+  useEffect(() => {
+    if (longitude && latitude) {
+      getData(latitude, longitude);
+      console.log(longitude, 'Longitude and Latitude', latitude);
+    }
+  }, [longitude, latitude]);
   return !data ? (
     <View style={{flex: 1, backgroundColor: 'red'}}>
       <Text style={{paddingTop: 50, color: 'red', backgroundColor: 'yellow'}}>
@@ -57,6 +65,11 @@ const GetLocation = () => {
   ) : (
     <View style={styles.container}>
       <View style={styles.result}>
+        <TouchableOpacity
+          style={{backgroundColor: 'red', width: 100, height: 100}}
+          onPress={onClick}>
+          <Text>Get Your Locations</Text>
+        </TouchableOpacity>
         <Text>
           {latitude} {longitude}
         </Text>
@@ -65,4 +78,8 @@ const GetLocation = () => {
   );
 };
 
-export default GetLocation;
+const mapDispatchToProps = {
+  getLoc,
+};
+
+export default connect(null, mapDispatchToProps)(GetLocation);
