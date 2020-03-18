@@ -10,6 +10,16 @@ export const getLoc = (long, lat) => {
     lat,
   };
 };
-export const loadLoc = () => ({
-  type: 'LoadLoc',
-});
+
+export const putData = data => {
+  return {
+    type: 'Put_Data',
+    payload: data,
+  };
+};
+
+export const loadData = () => {
+  return {
+    type: 'Load_Data',
+  };
+};

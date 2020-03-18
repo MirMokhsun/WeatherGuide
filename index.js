@@ -11,17 +11,12 @@ import App from './App';
 //Save Redux state
 import {persistStore, persistReducer} from 'redux-persist';
 import {PersistGate} from 'redux-persist/es/integration/react';
-import {watchLoadLoc} from './app/redux/saga';
+import {rootSaga} from './app/redux/saga';
 
 const sagaMiddleware = createSagaMiddleware();
-// const persistConfig = {
-//   key: 'root',
-//   storage: AsyncStorage,
-//   whitelist: ['latitude', 'longitude'],
-// };
 
-const store = createStore(rootReducer, applyMiddleware(logger, sagaMiddleware));
-sagaMiddleware.run(watchLoadLoc);
+const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
+sagaMiddleware.run(rootSaga);
 
 const persistedStore = persistStore(store);
 
