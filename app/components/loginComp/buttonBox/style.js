@@ -1,4 +1,4 @@
-import {StyleSheet, Dimensions} from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import colors from '../../../services/constans/colors';
 
 const width = Math.round(Dimensions.get('window').width);
@@ -6,7 +6,7 @@ const width = Math.round(Dimensions.get('window').width);
 export const styles = StyleSheet.create({
   btnBox: {
     flex: 1,
-    marginTop: '20%',
+    marginTop: '5%',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: 35,
     width: width / 2.5,
-    marginTop: 16,
+    marginTop: '4%',
     position: 'relative',
   },
 });

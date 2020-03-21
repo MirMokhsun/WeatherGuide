@@ -14,11 +14,11 @@ import { PersistGate } from 'redux-persist/es/integration/react';
 import { rootSaga } from './app/redux/saga';
 
 const sagaMiddleware = createSagaMiddleware();
-
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
-sagaMiddleware.run(rootSaga);
 
 const persistedStore = persistStore(store);
+console.disableYellowBox = true;
+sagaMiddleware.run(rootSaga);
 
 const Myentrypoint = () => (
   <Provider store={store}>

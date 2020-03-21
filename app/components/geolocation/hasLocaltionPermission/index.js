@@ -7,7 +7,6 @@ const hasLocationPermission = async () => {
   ) {
     return true;
   }
-  console.log('Huiston we have a problem after here')
   const hasPermission = await PermissionsAndroid.check(
     PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
   );

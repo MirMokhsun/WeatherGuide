@@ -1,9 +1,9 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import colors from '../../services/constans/colors';
 
 export const styles = StyleSheet.create({
   container: {
-    height: '65%',
+    height: '55%',
     width: '90%',
     marginTop: 15,
     borderRadius: 3,
@@ -18,9 +18,9 @@ export const styles = StyleSheet.create({
   switchCont: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    // paddingVertical: '4%',
+    paddingStart: 10,
     borderBottomWidth: 1,
-    height: '13.5%',
+    height: '20%',
     width: '100%',
     borderColor: 'white',
     alignItems: 'center',
@@ -30,16 +30,12 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontFamily: 'Roboto-Bold',
   },
-  btnView: {
-    height: 120,
-    width: 350,
-    alignItems: 'center',
-    paddingTop: '5%',
-  },
   touchStl: {
-    backgroundColor: 'black',
+    marginTop: 10,
+    alignSelf: 'center',
+    backgroundColor: colors.black,
     width: '20%',
-    height: '30%',
+    height: '10%',
     alignItems: 'center',
     borderRadius: 25,
     justifyContent: 'center',

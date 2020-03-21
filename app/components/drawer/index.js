@@ -17,6 +17,7 @@ const items = [
     onPress: null,
     iconName: 'flare',
     title: texts.TEMPER,
+    num: 1,
   },
   // {
   //     onPress: null,
@@ -32,6 +33,7 @@ const items = [
     onPress: null,
     iconName: 'airplay',
     title: texts.BACKGROUND,
+    num: 1,
   },
   {
     onPress: navigation => navigation.navigate(routs.Map),
@@ -61,16 +63,3 @@ const items = [
 ];
 
 export default items;
-// function mapStateToProps(state) {
-//     return {
-//         back: state.back,
-//     }
-// }
-
-// function mapDispatchToProps(dispatch) {
-//     return {
-//         number: (id) => dispatch(chacgebg(id)),
-//     }
-// }
-
-// export default connect(mapStateToProps, mapDispatchToProps)(items)

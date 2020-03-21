@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import colors from '../../services/constans/colors';
 
 export const styles = StyleSheet.create({
@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
     fontFamily: 'Roboto-Bold',
   },
   touch: {
-    flexDirection: 'row-reverse',
+    flexDirection: 'row',
     width: '100%',
     justifyContent: 'space-between',
     alignItems: 'center',

@@ -1,16 +1,22 @@
-export const BACKGROUNDOFF = 'BACKGROUNDOFF'
-export const GETLOCATION = 'GETLOCATION'
-export const PUTDATA = 'PUTDATA'
-export const LOADDATA = 'LOADDATA'
+const BACKGROUND_OFF = 'BACKGROUND_OFF'
+const BACKGROUND_ON = 'BACKGROUND_ON'
+const GET_LOCATION = 'GETLOCATION'
+const PUT_DATA = 'PUT_DATA'
+const LOAD_DATA = 'LOAD_DATA'
 
 export const backgroundOff = background => ({
-  type: BACKGROUNDOFF,
-  background,
+  type: BACKGROUND_OFF,
+  payload: background = false,
+});
+
+export const backgroundOn = background => ({
+  type: BACKGROUND_ON,
+  payload: background = true,
 });
 
 export const getLoc = (long, lat) => {
   return {
-    type: GETLOCATION,
+    type: GET_LOCATION,
     long,
     lat,
   };
@@ -18,13 +24,13 @@ export const getLoc = (long, lat) => {
 
 export const putData = data => {
   return {
-    type: 'PUTDATA',
+    type: PUT_DATA,
     payload: data,
   };
 };
 
 export const loadData = () => {
   return {
-    type: 'LOADDATA',
+    type: LOAD_DATA,
   };
 };

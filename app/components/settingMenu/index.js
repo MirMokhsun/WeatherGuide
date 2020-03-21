@@ -1,59 +1,31 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
-import {styles} from './style';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { styles } from './style';
 import Switcher from './switcher';
 import routs from '../../services/constans/routs';
 import texts from '../../services/constans/texts';
+import setItems from '../../../__mocks__/settings';
+import Icon from 'react-native-vector-icons/Feather';
+import colors from '../../services/constans/colors';
 
-export const setLine = (iconName, switchText1, switchText2) => {
-  return (
-    <View style={styles.switchCont}>
-      {/* <Icon /> */}
-      <Text style={styles.txt}> {texts.TEMP}</Text>
-      <Switcher title1={switchText1} title2={switchText2} />
-    </View>
-  );
-};
-const SettingBox = ({navigation}) => {
+
+const SettingBox = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <View style={styles.switchCont}>
-        {/* <Icon /> */}
-        <Text style={styles.txt}>{texts.TEMPER}</Text>
-        <Switcher title1="F" title2="C" />
-      </View>
-      <View style={styles.switchCont}>
-        {/* <Icon /> */}
-        <Text style={styles.txt}>{texts.Time_Format}</Text>
-        <Switcher title1="24" title2="12" />
-      </View>
-      <View style={styles.switchCont}>
-        {/* <Icon /> */}
-        <Text style={styles.txt}>{texts.WIND_VEL}</Text>
-        <Switcher title1="km" title2="m" />
-      </View>
-      <View style={styles.switchCont}>
-        {/* <Icon /> */}
-        <Text style={styles.txt}>{texts.LOCK}</Text>
-        <Switcher />
-      </View>
-      <View style={styles.switchCont}>
-        {/* <Icon /> */}
-        <Text style={styles.txt}>{texts.NOTIFI}</Text>
-        <Switcher />
-      </View>
-      <View style={styles.switchCont}>
-        {/* <Icon /> */}
-        <Text style={styles.txt}>{texts.STATUS_PANEL}</Text>
-        <Switcher />
-      </View>
-      <View style={styles.btnView}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate(routs.LoginScreen)}
-          style={styles.touchStl}>
-          <Text style={styles.btnTxt}>{texts.DONE}</Text>
-        </TouchableOpacity>
-      </View>
+      {setItems.map(({ iconName, text, title1, title2, onPress }) => {
+        return (
+          <View style={styles.switchCont}>
+            <Icon name={iconName} size={25} color={colors.emerald} />
+            <Text style={styles.txt}>{text}</Text>
+            <Switcher title1={title1} title2={title2} onPress={onPress} />
+          </View>
+        )
+      })}
+      <TouchableOpacity
+        onPress={() => navigation.navigate(routs.LoginScreen)}
+        style={styles.touchStl}>
+        <Text style={styles.btnTxt}>{texts.DONE}</Text>
+      </TouchableOpacity>
     </View>
   );
 };

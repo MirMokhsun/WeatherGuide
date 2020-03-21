@@ -1,4 +1,4 @@
-import {StyleSheet, Dimensions} from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import colors from '../../../services/constans/colors';
 
 const width = Math.round(Dimensions.get('window').width);
@@ -7,8 +7,8 @@ export const styles = StyleSheet.create({
   image: {
     maxHeight: 160,
     maxWidth: 160,
-    marginTop: 10,
-    paddingTop: 10,
+    marginTop: '10%',
+    paddingTop: '10%',
   },
   txt: {
     paddingTop: 15,
@@ -19,6 +19,6 @@ export const styles = StyleSheet.create({
   imageBox: {
     flex: 2,
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: '2%',
   },
 });
