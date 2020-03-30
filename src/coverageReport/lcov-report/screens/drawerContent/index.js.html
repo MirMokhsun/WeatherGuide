@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/21</span>
+                <span class='fraction'>0/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>0/14</span>
             </div>
         
             
@@ -88,26 +88,36 @@
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -120,27 +130,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
-import {Text, View,<span class="cstat-no" title="statement not covered" > TouchableOpacity} from </span>'react-native';
-import {style<span class="cstat-no" title="statement not covered" >s} from './style';</span>
+import { Text, View<span class="cstat-no" title="statement not covered" >, TouchableOpacity } fro</span>m 'react-native';
+import { styl<span class="cstat-no" title="statement not covered" >es } from './style'</span>;
 import texts <span class="cstat-no" title="statement not covered" >from '../../services/constans/texts';</span>
 import Icon from 'rea<span class="cstat-no" title="statement not covered" >ct-native-vector-icons/MaterialIcons';</span>
 import colors <span class="cstat-no" title="statement not covered" >from '../../services/constans/colors';</span>
-import items f<span class="cstat-no" title="statement not covered" >rom '../../components/drawer';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+import items f<span class="cstat-no" title="statement not covered" >rom '../../components/drawer';</span>
+import SwitchButton from 'switc<span class="cstat-no" title="statement not covered" >h-button-react-native';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
 &nbsp;
-const DrawerContent <span class="cstat-no" title="statement not covered" >= ({navig<span class="fstat-no" title="function not covered" >ation}) =&gt; {<span class="cstat-no" title="statement not covered" ></span></span></span>
+const DrawerContent <span class="cstat-no" title="statement not covered" >= ({ navi<span class="fstat-no" title="function not covered" >gation }) =&gt; {<span class="cstat-no" title="statement not covered" ></span></span></span>
 <span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;View style={styles.drawerContent}&gt;
       &lt;View style={styles.header}&gt;
         &lt;Text style={styles.txtSett}&gt;{texts.SETTINGS}&lt;/Text&gt;
       &lt;/View&gt;
       &lt;View style={styles.container}&gt;
-        {items.map(({onP<span class="fstat-no" title="function not covered" >re</span>ss, iconName, title}) =&gt; {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
+        {items.map(({ on<span class="fstat-no" title="function not covered" >Pr</span>ess, iconName, title, num }) =<span class="cstat-no" title="statement not covered" >&gt; {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
 <span class="cstat-no" title="statement not covered" >          return (</span>
             &lt;TouchableOpacity
               style={styles.touch}
               onPress={onPres<span class="fstat-no" title="function not covered" >s </span>? () =&gt; onP<span class="cstat-no" title="statement not covered" >ress(navigation) : null}&gt;</span>
-              &lt;Icon name={iconName} size={25} color={colors.emerald} /&gt;
               &lt;Text style={styles.txt}&gt;{title}&lt;/Text&gt;
+              {
+                num ?
+                  &lt;SwitchButton&gt;&lt;/SwitchButton&gt; :
+                  &lt;Icon name={iconName} size={25} color={colors.emerald} /&gt;
+              }
             &lt;/TouchableOpacity&gt;
           );
         })}
@@ -157,7 +172,7 @@ const DrawerContent <span class="cstat-no" title="statement not covered" >= ({na
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Mar 16 2020 13:08:25 GMT+0400 (Azerbaijan Standard Time)
+                at Thu Mar 26 2020 19:16:39 GMT+0400 (Azerbaijan Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
